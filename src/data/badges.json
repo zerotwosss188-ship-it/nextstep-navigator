@@ -1,0 +1,60 @@
+{
+  "badges": [
+    {
+      "id": "first-step",
+      "name": "First Step",
+      "icon": "👣",
+      "color": "from-teal to-teal-dark",
+      "description": "You created your Career Passport"
+    },
+    {
+      "id": "explorer",
+      "name": "Explorer",
+      "icon": "🧭",
+      "color": "from-saffron to-saffron-dark",
+      "description": "Bookmarked your first career"
+    },
+    {
+      "id": "curator",
+      "name": "Curator",
+      "icon": "💎",
+      "color": "from-navy to-navy-light",
+      "description": "Bookmarked 5 careers"
+    },
+    {
+      "id": "voyager",
+      "name": "Voyager",
+      "icon": "🌍",
+      "color": "from-teal to-saffron",
+      "description": "Explored 3 different industries"
+    },
+    {
+      "id": "scholar",
+      "name": "Scholar",
+      "icon": "🎓",
+      "color": "from-saffron to-teal",
+      "description": "Completed your first quiz"
+    },
+    {
+      "id": "sage",
+      "name": "Sage",
+      "icon": "🧠",
+      "color": "from-navy to-teal",
+      "description": "Completed all 4 quizzes"
+    },
+    {
+      "id": "time-traveler",
+      "name": "Time Traveler",
+      "icon": "⏳",
+      "color": "from-saffron to-navy",
+      "description": "Viewed 5 careers in a session"
+    },
+    {
+      "id": "master",
+      "name": "Master Explorer",
+      "icon": "🏆",
+      "color": "from-saffron to-saffron-dark",
+      "description": "Unlocked 5 or more badges"
+    }
+  ]
+}

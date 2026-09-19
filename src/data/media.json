@@ -1,0 +1,122 @@
+[
+  {
+    "id": "media-1",
+    "title": "How to Choose Your Career Path After High School",
+    "speaker": "Simon Sinek",
+    "type": "video",
+    "category": "Motivation",
+    "youtubeId": "O3m14PVOq_g",
+    "duration": "18 min",
+    "description": "A no-nonsense talk on cutting through the noise when choosing your direction."
+  },
+  {
+    "id": "media-2",
+    "title": "A Day in the Life of a Software Engineer",
+    "speaker": "Tech With Tim",
+    "type": "video",
+    "category": "Job Roles",
+    "youtubeId": "e_TxH59MclA",
+    "duration": "12 min",
+    "description": "What does a typical day look like for a full-stack developer at a product company?"
+  },
+  {
+    "id": "media-3",
+    "title": "Exam Prep Strategy — Top Scorers Reveal",
+    "speaker": "Khan Academy",
+    "type": "video",
+    "category": "Exam Prep",
+    "youtubeId": "uxq-0vIVMJ4",
+    "duration": "22 min",
+    "description": "Top scorers share their study routines and mistake logs."
+  },
+  {
+    "id": "media-4",
+    "title": "The Future of AI and Jobs",
+    "speaker": "Lex Fridman Podcast",
+    "type": "podcast",
+    "category": "Industry Insights",
+    "youtubeId": "UclrVWafRAI",
+    "duration": "2h 14min",
+    "description": "Deep conversation on which careers will thrive and which will fade in the AI era."
+  },
+  {
+    "id": "media-5",
+    "title": "How to Crack Your First Internship",
+    "speaker": "Alex Chen",
+    "type": "video",
+    "category": "Internships",
+    "youtubeId": "m_aJpGieFH8",
+    "duration": "15 min",
+    "description": "Practical tips on building a portfolio and reaching out to recruiters."
+  },
+  {
+    "id": "media-6",
+    "title": "Life of an Accounting Student — Real Talk",
+    "speaker": "Brandon Miller",
+    "type": "podcast",
+    "category": "Job Roles",
+    "youtubeId": "BqSxjmvXzzY",
+    "duration": "45 min",
+    "description": "Honest conversation about internships, exams, and mental health for aspiring accountants."
+  },
+  {
+    "id": "media-7",
+    "title": "Why I Left My Job to Pursue Design",
+    "speaker": "Emma Wilson",
+    "type": "video",
+    "category": "Motivation",
+    "youtubeId": "Tz1kVa8brLg",
+    "duration": "10 min",
+    "description": "The story behind switching from engineering to a career in design."
+  },
+  {
+    "id": "media-8",
+    "title": "Study Abroad — Complete Guide 2027",
+    "speaker": "David Foster",
+    "type": "video",
+    "category": "Study Abroad",
+    "youtubeId": "LtbssxgZhFo",
+    "duration": "28 min",
+    "description": "SOPs, recommendation letters, funding, and visa process broken down step by step."
+  },
+  {
+    "id": "media-9",
+    "title": "Government Jobs vs Private Sector",
+    "speaker": "Robert Kaplan",
+    "type": "podcast",
+    "category": "Industry Insights",
+    "youtubeId": "LVFQu_piWsE",
+    "duration": "38 min",
+    "description": "Weighing stability, growth, and purpose in career decisions."
+  },
+  {
+    "id": "media-10",
+    "title": "How to Write a Resume That Gets Noticed",
+    "speaker": "Jeff Su",
+    "type": "video",
+    "category": "Internships",
+    "youtubeId": "y8YH0Qbu5h4",
+    "duration": "9 min",
+    "description": "ATS-friendly resume format, action verbs, and common mistakes to avoid."
+  },
+  {
+    "id": "media-11",
+    "title": "From Small Town to Big Dream — My Journey",
+    "speaker": "Michael Rivera",
+    "type": "video",
+    "category": "Motivation",
+    "youtubeId": "rWnmMTwdzQQ",
+    "duration": "16 min",
+    "description": "A first-generation college student shares his path from a rural school."
+  },
+  {
+    "id": "media-12",
+    "title": "Data Science Career Roadmap 2026",
+    "speaker": "Krish Naik",
+    "type": "video",
+    "category": "Job Roles",
+    "youtubeId": "sWhqqiJuypA",
+    "duration": "24 min",
+    "description": "Skills, projects, and interview prep needed to break into data science."
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "Getting Started",
+      "question": "Is NextStep Navigator really free?",
+      "answer": "Yes, 100% free. No signups, no credit card, no hidden fees. It's built as a public good to help students make informed career decisions. We don't sell data, don't run ads, and don't upsell premium tiers."
+    },
+    {
+      "id": "faq-2",
+      "category": "Getting Started",
+      "question": "Do I need to create an account?",
+      "answer": "No account needed. Just enter your name and select your user type (Student, Graduate, or Professional) — that's it. Your data lives only in your browser and clears when you close the tab."
+    },
+    {
+      "id": "faq-3",
+      "category": "Getting Started",
+      "question": "How do I choose the right user type?",
+      "answer": "Pick based on your current stage, not your goal. If you're in school (Grades 8–12), pick Student. If you've finished a degree and are job-hunting or studying further, pick Graduate. If you're already working and exploring a switch, pick Working Professional."
+    },
+    {
+      "id": "faq-4",
+      "category": "Features",
+      "question": "How are careers in the Career Bank chosen?",
+      "answer": "Careers span 7 industries — Technology, Healthcare, Business, Creative, Engineering, Education, and Government. Each was hand-curated based on current job market data, salary reports, and real professional journeys. We prioritize careers with clear growth paths and accessible entry routes."
+    },
+    {
+      "id": "faq-5",
+      "category": "Features",
+      "question": "How does the Interest Quiz work?",
+      "answer": "The quiz has 4 tracks (Science, Commerce, Arts, Technology), each with 8 questions. Every answer is tagged with personality traits — analytical, creative, helping, etc. At the end, we aggregate your traits, pick your top one, and map it to a recommended stream plus matching careers."
+    },
+    {
+      "id": "faq-6",
+      "category": "Features",
+      "question": "Can I save careers for later?",
+      "answer": "Yes. Click the heart icon on any career card to bookmark it. You can also add personal notes to each bookmark — perfect for jotting down 'Why this interests me' or 'Questions to research'. Export your entire shortlist as a .txt file or share it via the native share sheet."
+    },
+    {
+      "id": "faq-7",
+      "category": "Features",
+      "question": "What is the Career Passport?",
+      "answer": "The Career Passport is your progress tracker. As you explore — bookmarking careers, completing quizzes, visiting pages — you unlock badges like Explorer, Curator, Voyager, and Scholar. It gamifies the exploration and gives you a sense of momentum. View it on your Profile page."
+    },
+    {
+      "id": "faq-8",
+      "category": "Privacy",
+      "question": "Is my data stored anywhere?",
+      "answer": "No. All data lives in your browser (localStorage for bookmarks and notes, sessionStorage for your profile). Nothing is sent to any server. We don't have a backend, database, or tracking scripts. Close your tab and everything is gone — except bookmarks, which persist locally on your device."
+    },
+    {
+      "id": "faq-9",
+      "category": "Privacy",
+      "question": "Does the site work offline?",
+      "answer": "Mostly yes. It's built as a Progressive Web App (PWA), so once loaded, most features work offline. Google Maps and YouTube embeds require internet, but career browsing, quizzes, and reading resources work without a connection — great for career fairs and rural schools."
+    },
+    {
+      "id": "faq-10",
+      "category": "Privacy",
+      "question": "Can I delete everything I've saved?",
+      "answer": "Yes. Go to Bookmarks → click 'Clear' to wipe all bookmarks and notes. Or clear your browser's local storage for a complete reset. We recommend exporting your bookmarks as .txt first if you want to keep a copy."
+    },
+    {
+      "id": "faq-11",
+      "category": "Content",
+      "question": "The information on careers — is it current?",
+      "answer": "Careers data reflects the Indian/US job market as of 2025–2026. Salary ranges are indicative and vary by city, company size, and experience. We update content periodically, but always cross-check with official sources like Naukri, LinkedIn, and industry salary reports before making major decisions."
+    },
+    {
+      "id": "faq-12",
+      "category": "Content",
+      "question": "Can I contribute or suggest a career?",
+      "answer": "Absolutely. Use the Feedback form to suggest a career, report an issue, or share a success story. We read every message and incorporate suggestions where possible."
+    }
+  ]
+}

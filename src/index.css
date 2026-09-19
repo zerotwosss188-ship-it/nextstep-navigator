@@ -1,0 +1,1041 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   BASE RESET
+   ============================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F7F9FC;
+  color: #0B1E3F;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #0B1E3F; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #FF8A00; }
+
+/* Focus rings */
+*:focus-visible {
+  outline: 2px solid #FF8A00;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Page transition */
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-page-in { animation: pageIn 0.3s ease-out; }
+
+/* ============================================================
+   GLOBAL SMOOTH TRANSITIONS
+   ============================================================ */
+button,
+a,
+input,
+textarea,
+select,
+[role="button"] {
+  transition:
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-white,
+.rounded-2xl,
+.rounded-3xl,
+.rounded-xl {
+  transition:
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+svg {
+  transition: color 0.22s, fill 0.22s, stroke 0.22s, transform 0.2s;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, label {
+  transition: color 0.22s, opacity 0.22s;
+}
+
+/* ============================================================
+   HOVER SAFETY — no accidental white background flips
+   Only applies where Tailwind's hover utilities would misfire
+   ============================================================ */
+[class*="hover:bg-white"]:hover,
+[class*="hover:bg-gray"]:hover,
+[class*="hover:bg-slate"]:hover {
+  background-color: inherit !important;
+  background: inherit !important;
+}
+
+/* ============================================================
+   GLASS THEME
+   ============================================================ */
+html.theme-glass,
+html.theme-glass body {
+  background-color: #dbe4f0 !important;
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(255, 138, 0, 0.55), transparent 38%),
+    radial-gradient(circle at 88% 12%, rgba(0, 194, 168, 0.55), transparent 40%),
+    radial-gradient(circle at 20% 88%, rgba(139, 92, 246, 0.45), transparent 40%),
+    radial-gradient(circle at 82% 85%, rgba(236, 72, 153, 0.40), transparent 42%),
+    linear-gradient(135deg, #dbe4f0 0%, #f0f4fa 50%, #d9e6ec 100%) !important;
+  background-attachment: fixed !important;
+  color: #0B1E3F !important;
+}
+
+html.theme-glass .bg-offwhite {
+  background: transparent !important;
+}
+
+html.theme-glass .bg-white {
+  background: rgba(255, 255, 255, 0.42) !important;
+  backdrop-filter: blur(24px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
+  border-color: rgba(255, 255, 255, 0.7) !important;
+  box-shadow:
+    0 12px 40px rgba(11, 30, 63, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
+}
+
+html.theme-glass .bg-white:hover {
+  background: rgba(255, 255, 255, 0.42) !important;
+}
+
+html.theme-glass .bg-navy {
+  background: rgba(11, 30, 63, 0.68) !important;
+  backdrop-filter: blur(24px) saturate(200%) !important;
+}
+
+html.theme-glass nav.bg-navy {
+  background: rgba(11, 30, 63, 0.55) !important;
+  backdrop-filter: blur(28px) saturate(200%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+html.theme-glass footer.bg-navy {
+  background: rgba(11, 30, 63, 0.72) !important;
+  backdrop-filter: blur(28px) saturate(200%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.10) !important;
+}
+
+html.theme-glass input,
+html.theme-glass textarea,
+html.theme-glass select {
+  background: rgba(255, 255, 255, 0.55) !important;
+  backdrop-filter: blur(12px) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
+  color: #0B1E3F !important;
+}
+
+html.theme-glass input::placeholder,
+html.theme-glass textarea::placeholder {
+  color: rgba(11, 30, 63, 0.4) !important;
+}
+
+html.theme-glass .bg-saffron,
+html.theme-glass button.bg-saffron {
+  background: linear-gradient(135deg, #FF8A00 0%, #E07B00 100%) !important;
+  color: #ffffff !important;
+  backdrop-filter: none !important;
+  box-shadow:
+    0 12px 32px rgba(255, 138, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+}
+
+html.theme-glass .bg-teal {
+  background: rgba(0, 194, 168, 0.92) !important;
+  color: #ffffff !important;
+}
+
+html.theme-glass nav[aria-label="Breadcrumb"] {
+  background: rgba(255, 255, 255, 0.65) !important;
+  backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important;
+}
+
+html.theme-glass .absolute.top-full > div {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+}
+
+html.theme-glass [data-modal-open="true"] {
+  background: rgba(11, 30, 63, 0.5) !important;
+  backdrop-filter: blur(16px) !important;
+}
+
+html.theme-glass [data-modal-open="true"] > div[class*="bg-white"] {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(36px) saturate(200%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+}
+
+html.theme-glass .passport-card {
+  background: linear-gradient(135deg, rgba(11, 30, 63, 0.78), rgba(26, 53, 96, 0.78)) !important;
+  backdrop-filter: blur(28px) saturate(200%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+html.theme-glass .passport-card .bg-white\/5 {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+html.theme-glass .text-saffron,
+html.theme-glass .fill-saffron {
+  color: #FF8A00 !important;
+  fill: #FF8A00 !important;
+}
+
+html.theme-glass h1,
+html.theme-glass h2 {
+  text-shadow: 0 1px 12px rgba(255, 255, 255, 0.9);
+}
+
+html.theme-glass .text-navy { color: #0B1E3F !important; }
+html.theme-glass .text-navy\/60 { color: rgba(11, 30, 63, 0.72) !important; }
+html.theme-glass .text-navy\/70 { color: rgba(11, 30, 63, 0.78) !important; }
+html.theme-glass .text-navy\/50 { color: rgba(11, 30, 63, 0.6) !important; }
+
+/* ============================================================
+   NEUMORPH THEME
+   ============================================================ */
+html.theme-neu,
+html.theme-neu body {
+  background: #e0e5ec !important;
+  color: #0B1E3F !important;
+}
+
+html.theme-neu .bg-offwhite,
+html.theme-neu main {
+  background: #e0e5ec !important;
+}
+
+html.theme-neu .bg-white {
+  background: #e0e5ec !important;
+  border-color: transparent !important;
+  box-shadow:
+    9px 9px 18px rgba(11, 30, 63, 0.15),
+    -9px -9px 18px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-neu .bg-white:hover {
+  background: #e0e5ec !important;
+  box-shadow:
+    13px 13px 26px rgba(11, 30, 63, 0.20),
+    -13px -13px 26px rgba(255, 255, 255, 1) !important;
+}
+
+/* Prevent children from changing on card hover */
+html.theme-neu .bg-white:hover * {
+  background-color: inherit !important;
+  color: inherit !important;
+  transform: none !important;
+}
+
+html.theme-neu .bg-white .text-saffron,
+html.theme-neu .bg-white:hover .text-saffron {
+  color: #FF8A00 !important;
+}
+
+html.theme-neu nav.bg-navy {
+  background: #d1d9e6 !important;
+  box-shadow:
+    0 6px 16px rgba(11, 30, 63, 0.10),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.7) !important;
+}
+
+html.theme-neu nav.bg-navy a,
+html.theme-neu nav.bg-navy button {
+  color: #0B1E3F !important;
+}
+
+html.theme-neu nav.bg-navy a:hover {
+  background: transparent !important;
+  color: #0B1E3F !important;
+}
+
+html.theme-neu nav.bg-navy a.text-saffron,
+html.theme-neu nav.bg-navy a[aria-current="page"] {
+  color: #FF8A00 !important;
+}
+
+html.theme-neu nav a:first-child {
+  color: #0B1E3F !important;
+}
+html.theme-neu nav a:first-child .text-saffron {
+  color: #FF8A00 !important;
+}
+
+html.theme-neu nav .bg-white\/10,
+html.theme-neu nav .bg-white\/10:hover {
+  background: #d1d9e6 !important;
+  box-shadow:
+    inset 3px 3px 6px rgba(11, 30, 63, 0.10),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.9) !important;
+}
+
+html.theme-neu nav .bg-white\/10 span,
+html.theme-neu nav .bg-white\/10 svg {
+  color: rgba(11, 30, 63, 0.55) !important;
+}
+
+html.theme-neu nav a[href="/profile"] {
+  background: #d1d9e6 !important;
+  color: #0B1E3F !important;
+  box-shadow:
+    inset 2px 2px 5px rgba(11, 30, 63, 0.10),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.9) !important;
+}
+
+html.theme-neu nav a[href="/profile"] * {
+  color: #0B1E3F !important;
+}
+
+html.theme-neu nav .bg-saffron {
+  background: linear-gradient(145deg, #ffa733, #ff7d00) !important;
+  color: #ffffff !important;
+}
+
+html.theme-neu input,
+html.theme-neu textarea,
+html.theme-neu select {
+  background: #e0e5ec !important;
+  border: none !important;
+  color: #0B1E3F !important;
+  box-shadow:
+    inset 4px 4px 10px rgba(11, 30, 63, 0.12),
+    inset -4px -4px 10px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-neu input::placeholder,
+html.theme-neu textarea::placeholder {
+  color: rgba(11, 30, 63, 0.35) !important;
+}
+
+html.theme-neu input:focus,
+html.theme-neu textarea:focus,
+html.theme-neu select:focus {
+  outline: none !important;
+  box-shadow:
+    inset 5px 5px 12px rgba(11, 30, 63, 0.15),
+    inset -5px -5px 12px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-neu .bg-saffron,
+html.theme-neu button.bg-saffron {
+  background: linear-gradient(145deg, #ffa733, #ff7d00) !important;
+  color: #ffffff !important;
+  box-shadow:
+    6px 6px 14px rgba(204, 110, 0, 0.40),
+    -5px -5px 12px rgba(255, 255, 255, 0.60) !important;
+}
+
+html.theme-neu .bg-saffron * {
+  background: transparent !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+html.theme-neu .bg-saffron svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+html.theme-neu .bg-teal {
+  background: linear-gradient(145deg, #33CEBB, #00A890) !important;
+  color: #ffffff !important;
+}
+
+html.theme-neu .bg-teal * {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+html.theme-neu button.rounded-full {
+  background: #e0e5ec !important;
+  box-shadow:
+    3px 3px 6px rgba(11, 30, 63, 0.12),
+    -3px -3px 6px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-neu button.rounded-full:hover {
+  background: #e0e5ec !important;
+  box-shadow:
+    5px 5px 10px rgba(11, 30, 63, 0.18),
+    -5px -5px 10px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-neu button.border.border-navy\/15 {
+  background: #e0e5ec !important;
+  color: rgba(11, 30, 63, 0.75) !important;
+  border-color: transparent !important;
+  box-shadow:
+    2px 2px 4px rgba(11, 30, 63, 0.10),
+    -2px -2px 4px rgba(255, 255, 255, 0.9) !important;
+}
+
+html.theme-neu button.bg-navy {
+  background: #d1d9e6 !important;
+  color: #0B1E3F !important;
+  box-shadow:
+    inset 3px 3px 6px rgba(11, 30, 63, 0.18),
+    inset -3px -3px 6px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-neu nav[aria-label="Breadcrumb"] {
+  background: #d9e0ea !important;
+  border-bottom: none !important;
+  box-shadow:
+    inset 0 -2px 4px rgba(11, 30, 63, 0.05),
+    inset 0 2px 4px rgba(255, 255, 255, 0.6) !important;
+}
+
+html.theme-neu nav[aria-label="Breadcrumb"] a,
+html.theme-neu nav[aria-label="Breadcrumb"] span,
+html.theme-neu nav[aria-label="Breadcrumb"] li {
+  color: #0B1E3F !important;
+  background: transparent !important;
+}
+
+html.theme-neu nav[aria-label="Breadcrumb"] svg {
+  color: #0B1E3F !important;
+  opacity: 0.55 !important;
+}
+
+html.theme-neu nav[aria-label="Breadcrumb"] span.text-saffron {
+  color: #FF8A00 !important;
+}
+
+html.theme-neu .absolute.top-full > div {
+  background: #e0e5ec !important;
+  border: none !important;
+  box-shadow:
+    8px 8px 20px rgba(11, 30, 63, 0.15),
+    -6px -6px 16px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-neu .absolute.top-full a {
+  background: transparent !important;
+  color: #0B1E3F !important;
+}
+
+html.theme-neu .absolute.top-full a:hover {
+  background: transparent !important;
+  color: #0B1E3F !important;
+}
+
+html.theme-neu [data-modal-open="true"] {
+  background: rgba(11, 30, 63, 0.40) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+html.theme-neu [data-modal-open="true"] > div[class*="bg-white"] {
+  background: #e0e5ec !important;
+  border: none !important;
+  box-shadow:
+    20px 20px 40px rgba(11, 30, 63, 0.30),
+    -12px -12px 30px rgba(255, 255, 255, 0.9) !important;
+}
+
+html.theme-neu footer.bg-navy {
+  background: #d1d9e6 !important;
+  color: #0B1E3F !important;
+  box-shadow:
+    0 -6px 16px rgba(11, 30, 63, 0.08),
+    inset 0 3px 6px rgba(255, 255, 255, 0.7) !important;
+}
+
+html.theme-neu footer a,
+html.theme-neu footer p,
+html.theme-neu footer span,
+html.theme-neu footer li {
+  color: #0B1E3F !important;
+  background: transparent !important;
+}
+
+html.theme-neu footer .text-saffron,
+html.theme-neu footer a:hover {
+  color: #FF8A00 !important;
+}
+
+html.theme-neu .passport-card {
+  background: linear-gradient(145deg, #0d2a52, #061a3a) !important;
+  border: none !important;
+  box-shadow:
+    12px 12px 24px rgba(11, 30, 63, 0.45),
+    -8px -8px 16px rgba(255, 255, 255, 0.10) !important;
+}
+
+html.theme-neu .passport-card .bg-white\/5 {
+  background: #1a355c !important;
+  border: none !important;
+  box-shadow:
+    inset 4px 4px 10px rgba(0, 0, 0, 0.35),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.06) !important;
+}
+
+html.theme-neu h1,
+html.theme-neu h2,
+html.theme-neu h3 {
+  color: #0B1E3F !important;
+  text-shadow: none !important;
+}
+
+html.theme-neu .text-navy { color: #0B1E3F !important; }
+html.theme-neu .text-navy\/60 { color: rgba(11, 30, 63, 0.6) !important; }
+html.theme-neu .text-navy\/70 { color: rgba(11, 30, 63, 0.7) !important; }
+html.theme-neu .text-navy\/50 { color: rgba(11, 30, 63, 0.5) !important; }
+
+html.theme-neu ::-webkit-scrollbar-track { background: #e0e5ec !important; }
+html.theme-neu ::-webkit-scrollbar-thumb { background: #c5cddb !important; }
+html.theme-neu ::-webkit-scrollbar-thumb:hover { background: #FF8A00 !important; }
+
+/* ============================================================
+   CLAYMORPHISM THEME
+   ============================================================ */
+html.theme-clay,
+html.theme-clay body {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 228, 199, 0.9) 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(212, 245, 239, 0.9) 0%, transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(255, 214, 168, 0.5) 0%, transparent 40%),
+    radial-gradient(circle at 15% 85%, rgba(180, 235, 225, 0.5) 0%, transparent 40%),
+    linear-gradient(135deg, #fef3e6 0%, #f7f9fc 50%, #e6f7f3 100%) !important;
+  background-attachment: fixed !important;
+  color: #0B1E3F !important;
+}
+
+html.theme-clay .bg-offwhite,
+html.theme-clay main {
+  background: transparent !important;
+}
+
+html.theme-clay .bg-white {
+  background: #ffffff !important;
+  border-color: transparent !important;
+  box-shadow:
+    0 20px 40px -8px rgba(255, 138, 0, 0.20),
+    0 10px 20px -4px rgba(11, 30, 63, 0.08),
+    inset 0 -8px 16px -6px rgba(255, 138, 0, 0.10),
+    inset 0 8px 16px -6px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-clay .bg-white:hover {
+  background: #ffffff !important;
+  box-shadow:
+    0 24px 48px -8px rgba(255, 138, 0, 0.28),
+    0 12px 24px -4px rgba(11, 30, 63, 0.10),
+    inset 0 -10px 20px -6px rgba(255, 138, 0, 0.14),
+    inset 0 10px 20px -6px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-clay .rounded-xl { border-radius: 1.5rem !important; }
+html.theme-clay .rounded-2xl { border-radius: 2rem !important; }
+html.theme-clay .rounded-3xl { border-radius: 2.5rem !important; }
+
+html.theme-clay nav.bg-navy {
+  background: linear-gradient(135deg, #1A3560 0%, #0B1E3F 100%) !important;
+  box-shadow:
+    0 12px 28px rgba(255, 138, 0, 0.22),
+    0 6px 14px rgba(11, 30, 63, 0.20),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.20),
+    inset 0 4px 8px rgba(255, 255, 255, 0.10) !important;
+  border-bottom: none !important;
+}
+
+html.theme-clay nav.bg-navy a,
+html.theme-clay nav.bg-navy button {
+  color: #ffffff !important;
+}
+
+html.theme-clay nav.bg-navy a:hover,
+html.theme-clay nav.bg-navy button:hover {
+  background: transparent !important;
+  color: #FFA733 !important;
+}
+
+html.theme-clay nav.bg-navy a.text-saffron {
+  color: #FF8A00 !important;
+}
+
+html.theme-clay nav .bg-white\/10 {
+  background: linear-gradient(145deg, #0d2246, #0a1a35) !important;
+  border-radius: 9999px !important;
+  box-shadow:
+    inset 0 3px 8px rgba(0, 0, 0, 0.35),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.08) !important;
+}
+
+html.theme-clay nav .bg-white\/10 span,
+html.theme-clay nav .bg-white\/10 svg {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+html.theme-clay nav a[href="/profile"] {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.06)) !important;
+  border-radius: 9999px !important;
+  box-shadow:
+    inset 0 3px 6px rgba(255, 255, 255, 0.15),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.20),
+    0 4px 10px rgba(255, 138, 0, 0.12) !important;
+}
+
+html.theme-clay nav a[href="/profile"] * {
+  color: #ffffff !important;
+}
+
+html.theme-clay nav .bg-saffron {
+  background: linear-gradient(145deg, #FFA733, #FF8A00, #E07B00) !important;
+  box-shadow:
+    0 4px 10px rgba(255, 138, 0, 0.45),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.20) !important;
+  color: #ffffff !important;
+}
+
+html.theme-clay nav[aria-label="Breadcrumb"] {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: none !important;
+  box-shadow:
+    0 4px 12px rgba(255, 138, 0, 0.10),
+    inset 0 2px 4px rgba(255, 255, 255, 0.9) !important;
+}
+
+html.theme-clay nav[aria-label="Breadcrumb"] a,
+html.theme-clay nav[aria-label="Breadcrumb"] span,
+html.theme-clay nav[aria-label="Breadcrumb"] li {
+  color: #0B1E3F !important;
+}
+
+html.theme-clay nav[aria-label="Breadcrumb"] span.text-saffron {
+  color: #FF8A00 !important;
+}
+
+html.theme-clay input,
+html.theme-clay textarea,
+html.theme-clay select {
+  background: #fff8ef !important;
+  border: none !important;
+  color: #0B1E3F !important;
+  border-radius: 1.25rem !important;
+  box-shadow:
+    inset 0 4px 8px rgba(255, 138, 0, 0.10),
+    inset 0 -3px 6px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-clay input::placeholder,
+html.theme-clay textarea::placeholder {
+  color: rgba(11, 30, 63, 0.35) !important;
+}
+
+html.theme-clay input:focus,
+html.theme-clay textarea:focus,
+html.theme-clay select:focus {
+  outline: none !important;
+  box-shadow:
+    inset 0 5px 10px rgba(255, 138, 0, 0.15),
+    inset 0 -4px 8px rgba(255, 255, 255, 1),
+    0 0 0 3px rgba(255, 138, 0, 0.20) !important;
+}
+
+html.theme-clay .bg-saffron,
+html.theme-clay button.bg-saffron {
+  background: linear-gradient(135deg, #FFA733 0%, #FF8A00 50%, #E07B00 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow:
+    0 12px 24px -4px rgba(255, 138, 0, 0.45),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.15),
+    inset 0 4px 8px rgba(255, 255, 255, 0.30) !important;
+}
+
+html.theme-clay button.rounded-full {
+  background: #ffffff !important;
+  color: rgba(11, 30, 63, 0.75) !important;
+  border: none !important;
+  box-shadow:
+    0 6px 12px -4px rgba(255, 138, 0, 0.18),
+    inset 0 -3px 6px -2px rgba(255, 138, 0, 0.10) !important;
+}
+
+html.theme-clay button.bg-navy {
+  background: linear-gradient(135deg, #1A3560 0%, #0B1E3F 100%) !important;
+  color: #ffffff !important;
+}
+
+html.theme-clay [data-modal-open="true"] {
+  background: rgba(255, 200, 130, 0.30) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+html.theme-clay [data-modal-open="true"] > div[class*="bg-white"] {
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 2rem !important;
+  box-shadow:
+    0 32px 64px -12px rgba(255, 138, 0, 0.35),
+    inset 0 -10px 20px -6px rgba(255, 138, 0, 0.14),
+    inset 0 10px 20px -6px rgba(255, 255, 255, 1) !important;
+}
+
+html.theme-clay .absolute.top-full > div {
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 1.5rem !important;
+  box-shadow:
+    0 20px 40px -8px rgba(255, 138, 0, 0.25),
+    0 10px 20px -4px rgba(11, 30, 63, 0.10) !important;
+}
+
+html.theme-clay .absolute.top-full a {
+  color: #0B1E3F !important;
+  background: transparent !important;
+}
+
+html.theme-clay .absolute.top-full a:hover {
+  background: rgba(255, 138, 0, 0.08) !important;
+  color: #FF8A00 !important;
+}
+
+html.theme-clay footer.bg-navy {
+  background: linear-gradient(135deg, #1A3560 0%, #0B1E3F 100%) !important;
+  box-shadow:
+    0 -8px 24px rgba(255, 138, 0, 0.15),
+    inset 0 4px 8px rgba(255, 255, 255, 0.08) !important;
+}
+
+html.theme-clay .passport-card {
+  background: linear-gradient(135deg, #1A3560 0%, #0B1E3F 100%) !important;
+  border: none !important;
+  border-radius: 2.5rem !important;
+  box-shadow:
+    0 28px 56px -12px rgba(255, 138, 0, 0.35),
+    0 14px 28px -6px rgba(11, 30, 63, 0.30),
+    inset 0 -10px 20px -6px rgba(255, 138, 0, 0.20) !important;
+}
+
+html.theme-clay .passport-card .bg-white\/5 {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: none !important;
+  border-radius: 1.5rem !important;
+  box-shadow:
+    inset 0 4px 8px rgba(0, 0, 0, 0.20),
+    inset 0 -3px 6px rgba(255, 255, 255, 0.08) !important;
+}
+
+html.theme-clay h1,
+html.theme-clay h2,
+html.theme-clay h3 {
+  color: #0B1E3F !important;
+}
+
+html.theme-clay .text-navy { color: #0B1E3F !important; }
+html.theme-clay .text-navy\/60 { color: rgba(11, 30, 63, 0.6) !important; }
+html.theme-clay .text-navy\/70 { color: rgba(11, 30, 63, 0.7) !important; }
+html.theme-clay .text-navy\/50 { color: rgba(11, 30, 63, 0.5) !important; }
+
+html.theme-clay ::-webkit-scrollbar-track { background: #fef3e6 !important; }
+html.theme-clay ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #FFA733, #FF8A00) !important;
+  border-radius: 5px !important;
+}
+
+/* ============================================================
+   THEME PICKER — clean, no hover, all themes
+   ============================================================ */
+[data-theme-picker] {
+  transform: none !important;
+  transition: border-color 0.2s ease !important;
+}
+
+[data-theme-picker]:hover,
+[data-theme-picker]:focus,
+[data-theme-picker]:active {
+  transform: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+[data-theme-picker] *,
+[data-theme-picker]:hover * {
+  transform: none !important;
+}
+
+[data-theme-picker][data-active="true"] {
+  border-color: #FF8A00 !important;
+}
+
+[data-theme-picker][data-active="false"] {
+  border-color: rgba(11, 30, 63, 0.10) !important;
+}
+
+[data-theme-picker][data-active="false"]:hover {
+  border-color: rgba(11, 30, 63, 0.25) !important;
+}
+
+html.theme-neu [data-theme-picker] {
+  background: #e0e5ec !important;
+  box-shadow: none !important;
+}
+
+html.theme-neu [data-theme-picker] p {
+  color: #0B1E3F !important;
+}
+
+html.theme-neu [data-theme-picker] p.text-\[10px\] {
+  color: rgba(11, 30, 63, 0.55) !important;
+}
+
+html.theme-glass [data-theme-picker] {
+  background: rgba(255, 255, 255, 0.42) !important;
+  backdrop-filter: blur(16px);
+}
+
+html.theme-clay [data-theme-picker] {
+  background: white !important;
+}
+
+/* Theme previews — static, no hover */
+.theme-preview {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.theme-preview.classic {
+  background: #ffffff;
+  border: 1px solid rgba(11, 30, 63, 0.08);
+  box-shadow: 0 1px 3px rgba(11, 30, 63, 0.08);
+}
+
+.theme-preview.glass {
+  background:
+    radial-gradient(circle at 20% 25%, rgba(255, 138, 0, 0.85), transparent 55%),
+    radial-gradient(circle at 80% 75%, rgba(0, 194, 168, 0.85), transparent 55%),
+    #dbe4f0;
+}
+.theme-preview.glass::after {
+  content: '';
+  position: absolute;
+  inset: 15%;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 0.6rem;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 20px rgba(11, 30, 63, 0.15);
+}
+
+.theme-preview.neu {
+  background: #e0e5ec;
+}
+.theme-preview.neu::after {
+  content: '';
+  position: absolute;
+  inset: 18%;
+  background: #e0e5ec;
+  border-radius: 0.6rem;
+  box-shadow:
+    5px 5px 10px rgba(11, 30, 63, 0.15),
+    -5px -5px 10px rgba(255, 255, 255, 1);
+}
+
+.theme-preview.clay {
+  background:
+    radial-gradient(circle at 20% 20%, #ffe4c7 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, #d4f5ef 0%, transparent 50%),
+    #fef3e6;
+}
+.theme-preview.clay::after {
+  content: '';
+  position: absolute;
+  inset: 15%;
+  background: white;
+  border-radius: 1rem;
+  box-shadow:
+    0 8px 16px -4px rgba(255, 138, 0, 0.35),
+    inset 0 -6px 12px -4px rgba(255, 138, 0, 0.20),
+    inset 0 6px 12px -4px rgba(255, 255, 255, 1);
+}
+
+/* ============================================================
+   AI ADVISOR CHAT — theme-aware, no white hover flashes
+   ============================================================ */
+
+/* Chat container — frosted in every theme */
+[class*="fixed bottom-6"][class*="right-6"][class*="w-["] {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(32px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(200%) !important;
+}
+
+/* Chat header — navy gradient, static */
+[class*="fixed bottom-6"] .bg-gradient-to-r.from-navy,
+[class*="fixed bottom-6"] .bg-gradient-to-br.from-navy {
+  background: linear-gradient(135deg, #0B1E3F, #1A3560) !important;
+}
+
+/* Chat messages — never flip on hover */
+[class*="fixed bottom-6"] *:hover {
+  background-color: inherit;
+}
+
+/* Bot message bubbles stay white */
+[class*="fixed bottom-6"] .bg-white,
+[class*="fixed bottom-6"] .bg-white:hover {
+  background: #ffffff !important;
+}
+
+/* User message bubbles stay saffron */
+[class*="fixed bottom-6"] .bg-saffron,
+[class*="fixed bottom-6"] .bg-saffron:hover {
+  background: linear-gradient(135deg, #FF8A00, #E07B00) !important;
+  color: #ffffff !important;
+}
+
+/* Chat input — soft cream, never white flash */
+[class*="fixed bottom-6"] input,
+[class*="fixed bottom-6"] input:hover,
+[class*="fixed bottom-6"] input:focus {
+  background: #F7F9FC !important;
+  border: 1px solid rgba(11, 30, 63, 0.10) !important;
+  color: #0B1E3F !important;
+}
+
+[class*="fixed bottom-6"] input::placeholder {
+  color: rgba(11, 30, 63, 0.4) !important;
+}
+
+/* Header buttons (reset, close) — translucent overlay */
+[class*="fixed bottom-6"] .bg-white\/10,
+[class*="fixed bottom-6"] .bg-white\/10:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* ============================================================
+   MODALS — no white flashes inside
+   ============================================================ */
+[data-modal-open="true"] *:hover {
+  background-color: inherit;
+}
+
+[data-modal-open="true"] .bg-saffron:hover {
+  background: linear-gradient(135deg, #FF8A00, #E07B00) !important;
+}
+
+[data-modal-open="true"] .bg-navy:hover {
+  background: #0B1E3F !important;
+}
+/* ============================================================
+   NAVBAR SEARCH BAR — never solid white
+   ============================================================ */
+
+/* Base — always translucent white on navy */
+nav button[class*="bg-white\/10"],
+nav button[class*="bg-white\/20"],
+nav .bg-white\/10,
+nav .bg-white\/20 {
+  background: rgba(255, 255, 255, 0.12) !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Hover — slightly brighter, still translucent */
+nav button[class*="bg-white\/10"]:hover,
+nav button[class*="bg-white\/20"]:hover,
+nav .bg-white\/10:hover,
+nav .bg-white\/20:hover {
+  background: rgba(255, 255, 255, 0.20) !important;
+  background-color: rgba(255, 255, 255, 0.20) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Text inside search — soft white */
+nav button[class*="bg-white\/10"] span,
+nav button[class*="bg-white\/10"] svg,
+nav .bg-white\/10 span,
+nav .bg-white\/10 svg {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+nav button[class*="bg-white\/10"]:hover span,
+nav button[class*="bg-white\/10"]:hover svg,
+nav .bg-white\/10:hover span,
+nav .bg-white\/10:hover svg {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Clay theme — warm navy pill */
+html.theme-clay nav button[class*="bg-white\/10"],
+html.theme-clay nav .bg-white\/10 {
+  background: linear-gradient(145deg, #0d2246, #0a1a35) !important;
+  border: none !important;
+  box-shadow:
+    inset 0 3px 8px rgba(0, 0, 0, 0.35),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Glass theme — frosted */
+html.theme-glass nav button[class*="bg-white\/10"],
+html.theme-glass nav .bg-white\/10 {
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+/* Neumorph — light grey inset */
+html.theme-neu nav button[class*="bg-white\/10"],
+html.theme-neu nav .bg-white\/10 {
+  background: #d1d9e6 !important;
+  border: none !important;
+  box-shadow:
+    inset 3px 3px 6px rgba(11, 30, 63, 0.10),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.9) !important;
+}
+
+html.theme-neu nav button[class*="bg-white\/10"] span,
+html.theme-neu nav button[class*="bg-white\/10"] svg {
+  color: rgba(11, 30, 63, 0.55) !important;
+}

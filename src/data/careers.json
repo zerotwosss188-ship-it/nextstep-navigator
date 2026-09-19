@@ -1,0 +1,549 @@
+[
+  {
+    "id": "software-engineer",
+    "title": "Software Engineer",
+    "industry": "Technology",
+    "icon": "💻",
+    "description": "Design, develop, and maintain software applications and systems. Work across web, mobile, or backend infrastructure.",
+    "skills": ["Programming (Java/Python/JS)", "Data Structures", "Problem Solving", "Git", "System Design"],
+    "educationPath": "BS in CS/IT or coding bootcamp. Strong portfolio often matters more than the degree.",
+    "salaryMin": 75000,
+    "salaryMax": 200000,
+    "userTypes": ["student", "graduate", "professional"],
+    "whatYouDo": [
+      "Write production code 4–6 hours a day",
+      "Debug issues and review peers' code",
+      "Design system architecture and estimate tasks",
+      "Collaborate with product, design, and QA teams"
+    ],
+    "roadmap": [
+      { "stage": "High School", "action": "Learn Python or JavaScript basics", "resource": "CS50 (Harvard, free), freeCodeCamp" },
+      { "stage": "College Year 1–2", "action": "Master DSA + build 2 personal projects", "resource": "NeetCode 150, LeetCode Easy" },
+      { "stage": "College Year 3", "action": "Apply for internships at 30+ startups", "resource": "LinkedIn, AngelList, Handshake" },
+      { "stage": "College Year 4", "action": "Job prep — system design + mock interviews", "resource": "Pramp, System Design Primer (GitHub)" },
+      { "stage": "First 2 years", "action": "Specialize — backend, frontend, or ML", "resource": "On-the-job + one deep course" }
+    ],
+    "freeResources": [
+      { "name": "CS50 by Harvard", "type": "Course" },
+      { "name": "The Odin Project", "type": "Full-stack path" },
+      { "name": "NeetCode 150", "type": "DSA practice" },
+      { "name": "System Design Primer", "type": "GitHub guide" }
+    ],
+    "reality": {
+      "workLife": "Variable — intense at startups, calmer at big tech",
+      "stress": "Medium-High",
+      "remote": "Excellent — most remote-friendly career",
+      "future": "Strong but evolving rapidly with AI"
+    },
+    "commonMistakes": [
+      "Learning 5 languages, mastering none",
+      "Skipping DSA to 'just build projects'",
+      "Not contributing to open source",
+      "Chasing FAANG titles without fundamentals"
+    ],
+    "costAndTime": {
+      "time": "4 years degree + 1–2 years self-study",
+      "money": "$40K–$120K (in-state public) / $150K+ (private)",
+      "hidden": "Laptop $1,200, online courses $200/year"
+    },
+    "careerChangerPath": "Any background → 6-month intensive bootcamp → build 3 real projects → apply to startups → transition in 12–18 months."
+  },
+  {
+    "id": "data-scientist",
+    "title": "Data Scientist",
+    "industry": "Technology",
+    "icon": "📊",
+    "description": "Extract insights from data using statistics, machine learning, and programming to drive business decisions.",
+    "skills": ["Python", "Statistics", "Machine Learning", "SQL", "Data Visualization"],
+    "educationPath": "BS in Statistics/CS + MS in Data Science, or strong self-taught portfolio.",
+    "salaryMin": 95000,
+    "salaryMax": 220000,
+    "userTypes": ["graduate", "professional"],
+    "whatYouDo": [
+      "Clean and analyze datasets (SQL, Python)",
+      "Build and evaluate ML models",
+      "Present insights to business teams",
+      "Deploy models to production"
+    ],
+    "roadmap": [
+      { "stage": "High School", "action": "Math + Computer Science", "resource": "Khan Academy Statistics" },
+      { "stage": "College Year 1–2", "action": "Python + Pandas + SQL fundamentals", "resource": "Kaggle Learn, SQLBolt" },
+      { "stage": "College Year 3", "action": "Statistics + scikit-learn + 3 Kaggle projects", "resource": "Hands-On ML book, Kaggle" },
+      { "stage": "College Year 4", "action": "Deep Learning + portfolio + internship", "resource": "fast.ai, DeepLearning.AI" },
+      { "stage": "Job hunt", "action": "Apply to analyst/DS roles, prep case studies", "resource": "StrataScratch, Interview Query" }
+    ],
+    "freeResources": [
+      { "name": "Kaggle Learn", "type": "Micro-courses" },
+      { "name": "fast.ai", "type": "Practical DL" },
+      { "name": "StatQuest (YouTube)", "type": "Statistics" },
+      { "name": "Hands-On ML (GitHub notebooks)", "type": "Book" }
+    ],
+    "reality": {
+      "workLife": "Balanced at product companies, intense at startups",
+      "stress": "Medium-High — model failures are public",
+      "remote": "Excellent",
+      "future": "Very strong but evolving — focus shifting to ML engineering"
+    },
+    "commonMistakes": [
+      "Doing courses forever, never finishing a project",
+      "Ignoring SQL (it's 60% of the job)",
+      "Using complex models before understanding data",
+      "Not learning to communicate findings to non-tech people"
+    ],
+    "costAndTime": {
+      "time": "4-year degree + 1 year self-study/projects",
+      "money": "$0 (self-taught) to $60K (master's degree)",
+      "hidden": "Cloud credits $100, GPU for deep learning"
+    },
+    "careerChangerPath": "From any analytical role → 6-month Python + SQL + statistics → analyst role → transition to DS over 18–24 months."
+  },
+  {
+    "id": "cybersecurity-analyst",
+    "title": "Cybersecurity Analyst",
+    "industry": "Technology",
+    "icon": "🔐",
+    "description": "Protect organizations from cyber threats by monitoring networks, identifying vulnerabilities, and responding to incidents.",
+    "skills": ["Network Security", "Ethical Hacking", "SIEM Tools", "Cryptography"],
+    "educationPath": "BS in CS/IT + certifications (CEH, CISSP, CompTIA Security+).",
+    "salaryMin": 80000,
+    "salaryMax": 180000,
+    "userTypes": ["graduate", "professional"]
+  },
+  {
+    "id": "ux-designer",
+    "title": "UX/UI Designer",
+    "industry": "Technology",
+    "icon": "🎨",
+    "description": "Craft intuitive and beautiful digital experiences by researching user needs and designing interfaces.",
+    "skills": ["Figma", "User Research", "Wireframing", "Prototyping", "Visual Design"],
+    "educationPath": "B.Des, or any degree + UX bootcamp + strong portfolio.",
+    "salaryMin": 70000,
+    "salaryMax": 160000,
+    "userTypes": ["student", "graduate", "professional"],
+    "whatYouDo": [
+      "Interview users to understand pain points",
+      "Sketch wireframes and build Figma prototypes",
+      "Run usability tests and iterate on feedback",
+      "Collaborate with developers to ship features"
+    ],
+    "roadmap": [
+      { "stage": "Any time", "action": "Learn design fundamentals — color, type, layout", "resource": "Refactoring UI, Design of Everyday Things" },
+      { "stage": "3–6 months", "action": "Master Figma + build 3 practice projects", "resource": "Figma YouTube, Daily UI challenges" },
+      { "stage": "6–12 months", "action": "Build portfolio of 5 case studies (with process, not just pretty screens)", "resource": "Behance, Dribbble, personal site" },
+      { "stage": "Job hunt", "action": "Apply to 20+ junior roles + design internships", "resource": "LinkedIn, AngelList, Wellfound" },
+      { "stage": "First 2 years", "action": "Specialize — product, UX research, or design systems", "resource": "On-the-job + NN/g articles" }
+    ],
+    "freeResources": [
+      { "name": "Refactoring UI (free excerpts)", "type": "Book" },
+      { "name": "Figma Learn", "type": "Official tutorials" },
+      { "name": "NN/g Articles", "type": "UX research" },
+      { "name": "Google UX Design (audit free)", "type": "Coursera" }
+    ],
+    "reality": {
+      "workLife": "Balanced — regular hours at product companies",
+      "stress": "Medium — iteration cycles can be long",
+      "remote": "Excellent — fully remote-friendly",
+      "future": "Strong — every product needs good UX"
+    },
+    "commonMistakes": [
+      "Showing final screens without the design process",
+      "Learning tools without learning principles",
+      "Copying Dribbble shots without real problems",
+      "Ignoring accessibility (WCAG, contrast, keyboard nav)"
+    ],
+    "costAndTime": {
+      "time": "3 years degree or 6–12 month bootcamp + portfolio",
+      "money": "$0 (self-taught) to $15K (bootcamp)",
+      "hidden": "Figma Pro $15/mo, portfolio hosting $50/yr"
+    },
+    "careerChangerPath": "Any background → 6-month self-study → 3 strong case studies → freelance/small-agency start → product company in 12–18 months."
+  },
+  {
+    "id": "doctor",
+    "title": "Doctor (Physician)",
+    "industry": "Healthcare",
+    "icon": "🩺",
+    "description": "Diagnose and treat illnesses, improve patient health, and save lives across specialties like cardiology, pediatrics, and surgery.",
+    "skills": ["Biology", "Empathy", "Diagnosis", "Communication", "Decision Making"],
+    "educationPath": "BS + MD (4 yrs) + Residency (3–7 yrs). Total 11+ years after high school.",
+    "salaryMin": 150000,
+    "salaryMax": 450000,
+    "userTypes": ["student", "graduate"],
+    "whatYouDo": [
+      "Examine 20–50 patients daily (depending on specialty)",
+      "Diagnose conditions from symptoms and tests",
+      "Prescribe treatments and follow up on progress",
+      "Attend emergencies and night shifts"
+    ],
+    "roadmap": [
+      { "stage": "High School", "action": "Biology + Chemistry + Physics, high GPA", "resource": "AP Bio, Khan Academy" },
+      { "stage": "Pre-Med", "action": "BS + MCAT prep + shadow doctors", "resource": "AAMC, Kaplan free resources" },
+      { "stage": "Medical School (4 yrs)", "action": "Clinical rotations + Step exams", "resource": "First Aid, UWorld" },
+      { "stage": "Residency (3–7 yrs)", "action": "Choose specialty — internal medicine, surgery, etc.", "resource": "NRMP Match, residency programs" },
+      { "stage": "Practice", "action": "Build patient base, consider hospital vs. private practice", "resource": "Hospital credentialing, private practice" }
+    ],
+    "freeResources": [
+      { "name": "Khan Academy Biology", "type": "Video course" },
+      { "name": "Osmosis (medical videos)", "type": "YouTube" },
+      { "name": "AAMC Free Resources", "type": "Official MCAT prep" },
+      { "name": "PubMed Central", "type": "Research papers" }
+    ],
+    "reality": {
+      "workLife": "Demanding — long hours, night shifts, high stakes",
+      "stress": "High",
+      "remote": "Low — hands-on profession",
+      "future": "Always in demand, aging population ensures stability"
+    },
+    "commonMistakes": [
+      "Choosing medicine for prestige, not calling",
+      "Ignoring mental health during MCAT prep",
+      "Not researching specialties before residency choice",
+      "Underestimating the financial cost of medical school"
+    ],
+    "costAndTime": {
+      "time": "11+ years (BS + MD + Residency)",
+      "money": "$40K/yr (public) to $80K/yr (private) med school",
+      "hidden": "MCAT prep, books, relocation, exam fees"
+    },
+    "careerChangerPath": "Not typical — requires full pre-med + MD restart. Alternative: healthcare management, medical writing, pharma."
+  },
+  {
+    "id": "nurse",
+    "title": "Registered Nurse",
+    "industry": "Healthcare",
+    "icon": "💉",
+    "description": "Provide direct patient care, administer medications, and support doctors in hospitals and clinics.",
+    "skills": ["Patient Care", "Medical Knowledge", "Compassion", "Attention to Detail"],
+    "educationPath": "BSN (4 yrs) or ADN (2 yrs) + NCLEX-RN licensure.",
+    "salaryMin": 60000,
+    "salaryMax": 110000,
+    "userTypes": ["student", "graduate"]
+  },
+  {
+    "id": "physiotherapist",
+    "title": "Physiotherapist",
+    "industry": "Healthcare",
+    "icon": "🦴",
+    "description": "Help patients recover from injuries and improve mobility through exercise, massage, and manual therapy.",
+    "skills": ["Anatomy", "Rehabilitation", "Patience", "Hands-on Therapy"],
+    "educationPath": "DPT (Doctor of Physical Therapy, 3 yrs after bachelor's) + licensure.",
+    "salaryMin": 65000,
+    "salaryMax": 105000,
+    "userTypes": ["student", "graduate"]
+  },
+  {
+    "id": "psychologist",
+    "title": "Clinical Psychologist",
+    "industry": "Healthcare",
+    "icon": "🧠",
+    "description": "Diagnose and treat mental health conditions through therapy and counseling sessions.",
+    "skills": ["Active Listening", "Empathy", "Assessment", "CBT"],
+    "educationPath": "BA/BS Psychology → PhD/PsyD → state licensure.",
+    "salaryMin": 65000,
+    "salaryMax": 130000,
+    "userTypes": ["graduate", "professional"]
+  },
+  {
+    "id": "chartered-accountant",
+    "title": "Chartered Accountant",
+    "industry": "Business",
+    "icon": "📈",
+    "description": "Manage financial audits, taxation, and business advisory for companies and individuals.",
+    "skills": ["Accounting", "Taxation", "Auditing", "Financial Analysis", "Ethics"],
+    "educationPath": "BS in Accounting + CPA exam (4 sections) + state license.",
+    "salaryMin": 70000,
+    "salaryMax": 150000,
+    "userTypes": ["student", "graduate", "professional"],
+    "whatYouDo": [
+      "Audit company financials for accuracy",
+      "Prepare tax returns and compliance reports",
+      "Advise clients on business structuring",
+      "Represent clients before tax authorities"
+    ],
+    "roadmap": [
+      { "stage": "High School", "action": "Accounting + Math", "resource": "NCERT-equivalent, Khan Academy" },
+      { "stage": "College", "action": "BS Accounting — 150 credit hours for CPA", "resource": "AICPA resources" },
+      { "stage": "CPA Exam", "action": "Pass 4 sections (AUD, FAR, REG, BEC)", "resource": "Becker, Wiley CPAExcel" },
+      { "stage": "Early career", "action": "Public accounting (Big 4 or regional firm)", "resource": "Firm training programs" },
+      { "stage": "Growth", "action": "Specialize — tax, audit, or advisory", "resource": "Industry certifications (CFA, CFP)" }
+    ],
+    "freeResources": [
+      { "name": "AICPA Resources", "type": "Official CPA prep" },
+      { "name": "AccountingCoach", "type": "Free courses" },
+      { "name": "Farhat's Accounting Lectures", "type": "YouTube" },
+      { "name": "Khan Academy Finance", "type": "Finance basics" }
+    ],
+    "reality": {
+      "workLife": "Intense during tax season, flexible otherwise",
+      "stress": "High during exams and audits",
+      "remote": "Partial — client visits needed",
+      "future": "Stable — regulations keep growing"
+    },
+    "commonMistakes": [
+      "Underestimating CPA exam difficulty",
+      "Neglecting practical experience (internships matter)",
+      "Not building IT and communication skills",
+      "Giving up after one failed exam section"
+    ],
+    "costAndTime": {
+      "time": "4–5 years (degree + CPA)",
+      "money": "$3K–5K (exam + prep materials) + degree cost",
+      "hidden": "150 credit hours requirement often means extra semester"
+    },
+    "careerChangerPath": "Any bachelor's + accounting credits → CPA exam → entry-level accounting role. Expect 2–3 years part-time."
+  },
+  {
+    "id": "investment-banker",
+    "title": "Investment Banker",
+    "industry": "Business",
+    "icon": "💰",
+    "description": "Help companies raise capital, execute mergers & acquisitions, and manage financial strategy.",
+    "skills": ["Financial Modeling", "Valuation", "Excel", "Negotiation", "Networking"],
+    "educationPath": "BS in Finance/Econ + MBA (Finance) from top-tier program.",
+    "salaryMin": 120000,
+    "salaryMax": 500000,
+    "userTypes": ["graduate", "professional"]
+  },
+  {
+    "id": "marketing-manager",
+    "title": "Marketing Manager",
+    "industry": "Business",
+    "icon": "📣",
+    "description": "Plan and execute campaigns to promote products, build brand awareness, and drive customer acquisition.",
+    "skills": ["SEO/SEM", "Content Strategy", "Analytics", "Creativity", "Communication"],
+    "educationPath": "BS in Marketing/Business + MBA (Marketing) for senior roles.",
+    "salaryMin": 75000,
+    "salaryMax": 165000,
+    "userTypes": ["graduate", "professional"]
+  },
+  {
+    "id": "hr-manager",
+    "title": "HR Manager",
+    "industry": "Business",
+    "icon": "🤝",
+    "description": "Recruit talent, manage employee relations, and shape company culture and policies.",
+    "skills": ["Recruitment", "Communication", "Conflict Resolution", "Labor Law"],
+    "educationPath": "BS in HR/Business + MBA or SHRM-CP certification.",
+    "salaryMin": 65000,
+    "salaryMax": 140000,
+    "userTypes": ["graduate", "professional"]
+  },
+  {
+    "id": "graphic-designer",
+    "title": "Graphic Designer",
+    "industry": "Creative",
+    "icon": "🖌️",
+    "description": "Create visual content for branding, advertising, digital media, and print using design tools.",
+    "skills": ["Photoshop", "Illustrator", "Typography", "Creativity", "Color Theory"],
+    "educationPath": "BFA/B.Des, or self-taught + strong portfolio. Freelancing common.",
+    "salaryMin": 50000,
+    "salaryMax": 110000,
+    "userTypes": ["student", "graduate", "professional"],
+    "whatYouDo": [
+      "Create visuals for brands, ads, social media",
+      "Collaborate with copywriters and marketing teams",
+      "Iterate on designs based on client feedback",
+      "Prepare files for print/digital production"
+    ],
+    "roadmap": [
+      { "stage": "Any time", "action": "Learn design principles + Adobe/Figma", "resource": "Canva Design School (free), Figma" },
+      { "stage": "3–6 months", "action": "Build 10+ practice projects", "resource": "Fake clients, brief generators" },
+      { "stage": "Portfolio", "action": "Redesign real brands as case studies", "resource": "Behance, personal site" },
+      { "stage": "Freelance start", "action": "First 3 clients via Upwork/Fiverr/friends", "resource": "Upwork, Contra" },
+      { "stage": "Grow", "action": "Niche down — branding, packaging, or UI", "resource": "Specialized courses" }
+    ],
+    "freeResources": [
+      { "name": "Canva Design School", "type": "Free courses" },
+      { "name": "Figma Learn", "type": "Tutorials" },
+      { "name": "Adobe Creative Cloud tutorials", "type": "YouTube" },
+      { "name": "Fontpair, Coolors", "type": "Tools" }
+    ],
+    "reality": {
+      "workLife": "Variable — freelance is feast or famine",
+      "stress": "Medium — client revisions can be draining",
+      "remote": "Excellent — mostly remote",
+      "future": "Evolving — AI tools change the workflow"
+    },
+    "commonMistakes": [
+      "Underpricing early work",
+      "Taking every client regardless of fit",
+      "Not learning business/contract skills",
+      "Only knowing one tool (learn Adobe + Figma + Canva)"
+    ],
+    "costAndTime": {
+      "time": "6 months to a year to reach $2K/mo freelance",
+      "money": "$0 (self-taught) to $40K (design degree)",
+      "hidden": "Adobe subscription $22/mo, portfolio domain"
+    },
+    "careerChangerPath": "Learn Figma + Canva in 3 months → offer free work to 3 small businesses → build case studies → start charging → scale."
+  },
+  {
+    "id": "content-writer",
+    "title": "Content Writer",
+    "industry": "Creative",
+    "icon": "✍️",
+    "description": "Write blogs, articles, scripts, and marketing copy for brands and publications.",
+    "skills": ["Writing", "SEO", "Research", "Storytelling", "Editing"],
+    "educationPath": "Any degree + writing portfolio. Journalism/English helps.",
+    "salaryMin": 45000,
+    "salaryMax": 100000,
+    "userTypes": ["student", "graduate", "professional"]
+  },
+  {
+    "id": "film-director",
+    "title": "Film Director",
+    "industry": "Creative",
+    "icon": "🎬",
+    "description": "Lead the creative vision of films, web series, and video content — from script to screen.",
+    "skills": ["Storytelling", "Leadership", "Cinematography", "Editing", "Budgeting"],
+    "educationPath": "Film school (NYU, USC, AFI) or hands-on experience + portfolio.",
+    "salaryMin": 60000,
+    "salaryMax": 400000,
+    "userTypes": ["graduate", "professional"]
+  },
+  {
+    "id": "architect",
+    "title": "Architect",
+    "industry": "Creative",
+    "icon": "🏛️",
+    "description": "Design buildings and spaces balancing aesthetics, functionality, and safety.",
+    "skills": ["AutoCAD", "3D Modeling", "Creativity", "Structural Knowledge"],
+    "educationPath": "B.Arch (5 yrs) + state licensure (NCARB).",
+    "salaryMin": 65000,
+    "salaryMax": 140000,
+    "userTypes": ["student", "graduate"]
+  },
+  {
+    "id": "civil-engineer",
+    "title": "Civil Engineer",
+    "industry": "Engineering",
+    "icon": "🏗️",
+    "description": "Design, build, and maintain infrastructure — bridges, roads, dams, and buildings.",
+    "skills": ["Structural Analysis", "AutoCAD", "Project Management", "Surveying"],
+    "educationPath": "BS Civil Engineering + PE license for senior roles.",
+    "salaryMin": 70000,
+    "salaryMax": 135000,
+    "userTypes": ["student", "graduate"]
+  },
+  {
+    "id": "mechanical-engineer",
+    "title": "Mechanical Engineer",
+    "industry": "Engineering",
+    "icon": "⚙️",
+    "description": "Design and manufacture machines, engines, and mechanical systems across industries.",
+    "skills": ["Thermodynamics", "CAD", "Manufacturing", "Materials Science"],
+    "educationPath": "BS Mechanical Engineering + PE license optional.",
+    "salaryMin": 72000,
+    "salaryMax": 135000,
+    "userTypes": ["student", "graduate"]
+  },
+  {
+    "id": "electrical-engineer",
+    "title": "Electrical Engineer",
+    "industry": "Engineering",
+    "icon": "⚡",
+    "description": "Design and maintain electrical systems for power, electronics, and automation.",
+    "skills": ["Circuit Design", "Power Systems", "MATLAB", "Control Systems"],
+    "educationPath": "BS Electrical Engineering + PE license for senior roles.",
+    "salaryMin": 75000,
+    "salaryMax": 140000,
+    "userTypes": ["student", "graduate"]
+  },
+  {
+    "id": "teacher",
+    "title": "School Teacher",
+    "industry": "Education",
+    "icon": "📚",
+    "description": "Educate and inspire students, shape young minds, and foster a love for learning.",
+    "skills": ["Subject Mastery", "Communication", "Patience", "Classroom Management"],
+    "educationPath": "Bachelor's in subject + teaching certification (state-specific).",
+    "salaryMin": 45000,
+    "salaryMax": 85000,
+    "userTypes": ["student", "graduate"]
+  },
+  {
+    "id": "professor",
+    "title": "University Professor",
+    "industry": "Education",
+    "icon": "🎓",
+    "description": "Teach at universities, conduct research, and mentor the next generation of scholars.",
+    "skills": ["Research", "Teaching", "Publishing", "Critical Thinking"],
+    "educationPath": "Master's → PhD → postdoc or tenure-track position.",
+    "salaryMin": 70000,
+    "salaryMax": 180000,
+    "userTypes": ["graduate", "professional"]
+  },
+  {
+    "id": "ias-officer",
+    "title": "Government Administrator",
+    "industry": "Government",
+    "icon": "🏛️",
+    "description": "Administer public policy, lead government departments, and serve communities at senior levels.",
+    "skills": ["Public Policy", "Leadership", "Decision Making", "Public Administration"],
+    "educationPath": "Any bachelor's degree + civil service exam (varies by country).",
+    "salaryMin": 60000,
+    "salaryMax": 140000,
+    "userTypes": ["graduate", "professional"]
+  },
+  {
+    "id": "defence-officer",
+    "title": "Military Officer",
+    "industry": "Government",
+    "icon": "🎖️",
+    "description": "Serve in the armed forces — lead troops, defend borders, and build discipline and strategy.",
+    "skills": ["Physical Fitness", "Leadership", "Strategy", "Courage"],
+    "educationPath": "Military academy (ROTC, West Point, etc.) or officer candidate school.",
+    "salaryMin": 50000,
+    "salaryMax": 120000,
+    "userTypes": ["student", "graduate"]
+  },
+  {
+    "id": "entrepreneur",
+    "title": "Entrepreneur",
+    "industry": "Business",
+    "icon": "🚀",
+    "description": "Build your own company, solve problems, and create value — from startup idea to scaled business.",
+    "skills": ["Vision", "Risk Taking", "Networking", "Financial Literacy", "Execution"],
+    "educationPath": "No formal requirement — business degree or MBA helpful.",
+    "salaryMin": 0,
+    "salaryMax": 1000000,
+    "userTypes": ["graduate", "professional"],
+    "whatYouDo": [
+      "Talk to customers — every single day",
+      "Build and iterate on your product",
+      "Manage cash flow, hiring, and team culture",
+      "Pitch to investors and partners"
+    ],
+    "roadmap": [
+      { "stage": "Any time", "action": "Read startup fundamentals, follow founders on X", "resource": "Paul Graham essays, Indie Hackers" },
+      { "stage": "Learn phase", "action": "Build 3 small projects/side hustles", "resource": "Y Combinator Startup School (free)" },
+      { "stage": "First venture", "action": "Solve a real problem you have", "resource": "Talk to 50 potential customers" },
+      { "stage": "Growth", "action": "Iterate fast, track metrics, hire slowly", "resource": "Lean Startup, The Mom Test" },
+      { "stage": "Scale or pivot", "action": "Find product-market fit or pivot within 12 months", "resource": "YC alumni network, mentors" }
+    ],
+    "freeResources": [
+      { "name": "Y Combinator Startup School", "type": "Course" },
+      { "name": "The Mom Test (summary)", "type": "Book" },
+      { "name": "Indie Hackers", "type": "Community" },
+      { "name": "Paul Graham Essays", "type": "Blog" }
+    ],
+    "reality": {
+      "workLife": "Non-existent — you're always on",
+      "stress": "Extremely high — you own every problem",
+      "remote": "Full flexibility",
+      "future": "Highest risk, highest reward"
+    },
+    "commonMistakes": [
+      "Building without talking to customers first",
+      "Chasing investors before having a product",
+      "Hiring too fast, firing too slow",
+      "Running out of cash because you didn't watch runway"
+    ],
+    "costAndTime": {
+      "time": "2 years minimum before clarity",
+      "money": "$0 (bootstrapped) to $100K+ (with team)",
+      "hidden": "Opportunity cost — you're not earning a salary"
+    },
+    "careerChangerPath": "Start while employed. Build a side project → earn first $100 → quit when it covers 6 months of expenses."
+  }
+]

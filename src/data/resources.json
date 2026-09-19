@@ -1,0 +1,204 @@
+{
+  "resources": [
+    {
+      "id": "res-1",
+      "title": "Choosing Your Stream After 10th — Complete Guide",
+      "type": "Articles",
+      "category": "Stream Selection",
+      "description": "Understand the Science, Commerce, and Arts streams and how to choose based on your strengths and interests.",
+      "link": "#",
+      "readTime": "8 min",
+      "icon": "🧭"
+    },
+    {
+      "id": "res-2",
+      "title": "Top 50 Scholarships for Indian Students 2026",
+      "type": "Articles",
+      "category": "Funding",
+      "description": "Curated list of merit-based and need-based scholarships for UG and PG students.",
+      "link": "#",
+      "readTime": "12 min",
+      "icon": "🎓"
+    },
+    {
+      "id": "res-3",
+      "title": "How to Prepare for NEET/JEE While in Class 11",
+      "type": "Articles",
+      "category": "Exam Prep",
+      "description": "A realistic 18-month roadmap balancing school, coaching, and self-study.",
+      "link": "#",
+      "readTime": "10 min",
+      "icon": "📚"
+    },
+    {
+      "id": "res-4",
+      "title": "The Psychology of Career Choice",
+      "type": "Articles",
+      "category": "Self Discovery",
+      "description": "How to separate parental expectations from your own interests and values.",
+      "link": "#",
+      "readTime": "7 min",
+      "icon": "🧠"
+    },
+    {
+      "id": "res-5",
+      "title": "Resume Writing Masterclass",
+      "type": "eBooks",
+      "category": "Career Skills",
+      "description": "42-page ebook with templates for freshers, mid-level, and senior professionals.",
+      "link": "#",
+      "readTime": "PDF · 42 pages",
+      "icon": "📄"
+    },
+    {
+      "id": "res-6",
+      "title": "The Complete Guide to Study Abroad",
+      "type": "eBooks",
+      "category": "Study Abroad",
+      "description": "From shortlisting universities to visa interviews — everything in one place.",
+      "link": "#",
+      "readTime": "PDF · 80 pages",
+      "icon": "✈️"
+    },
+    {
+      "id": "res-7",
+      "title": "Data Science Career Roadmap",
+      "type": "eBooks",
+      "category": "Job Roles",
+      "description": "Step-by-step guide with skills, projects, and portfolio tips for aspiring data scientists.",
+      "link": "#",
+      "readTime": "PDF · 65 pages",
+      "icon": "📊"
+    },
+    {
+      "id": "res-8",
+      "title": "Public Speaking for Students",
+      "type": "eBooks",
+      "category": "Soft Skills",
+      "description": "Practical techniques to overcome stage fear and deliver confident presentations.",
+      "link": "#",
+      "readTime": "PDF · 38 pages",
+      "icon": "🎤"
+    },
+    {
+      "id": "res-9",
+      "title": "Pre-Interview Checklist",
+      "type": "Checklists",
+      "category": "Interview",
+      "description": "Everything to prepare 24 hours, 2 hours, and 10 minutes before your interview.",
+      "link": "#",
+      "readTime": "1 page",
+      "icon": "✅"
+    },
+    {
+      "id": "res-10",
+      "title": "College Application Checklist",
+      "type": "Checklists",
+      "category": "Admissions",
+      "description": "Documents, deadlines, and follow-ups — don't miss a single step.",
+      "link": "#",
+      "readTime": "1 page",
+      "icon": "📋"
+    },
+    {
+      "id": "res-11",
+      "title": "First Job Survival Checklist",
+      "type": "Checklists",
+      "category": "Career Skills",
+      "description": "Your first 90 days — what to do, what to avoid, and who to befriend.",
+      "link": "#",
+      "readTime": "2 pages",
+      "icon": "💼"
+    },
+    {
+      "id": "res-12",
+      "title": "Study Abroad Application Checklist",
+      "type": "Checklists",
+      "category": "Study Abroad",
+      "description": "SOPs, LORs, transcripts, test scores — a single-page tracker.",
+      "link": "#",
+      "readTime": "1 page",
+      "icon": "🌍"
+    },
+    {
+      "id": "res-13",
+      "title": "AI in Careers — Free Webinar Recording",
+      "type": "Webinars",
+      "category": "Industry Insights",
+      "description": "60-minute session on which careers will thrive in the AI era.",
+      "link": "#",
+      "readTime": "60 min",
+      "icon": "🤖"
+    },
+    {
+      "id": "res-14",
+      "title": "Cracking Product-Based Company Interviews",
+      "type": "Webinars",
+      "category": "Interview",
+      "description": "Insights from hiring managers at top tech companies.",
+      "link": "#",
+      "readTime": "75 min",
+      "icon": "💡"
+    },
+    {
+      "id": "res-15",
+      "title": "Design Careers — Portfolio Review Session",
+      "type": "Webinars",
+      "category": "Job Roles",
+      "description": "Live portfolio reviews with working designers from top agencies.",
+      "link": "#",
+      "readTime": "90 min",
+      "icon": "🎨"
+    },
+    {
+      "id": "res-16",
+      "title": "UPSC Preparation Strategy Webinar",
+      "type": "Webinars",
+      "category": "Exam Prep",
+      "description": "By an IAS officer — syllabus breakdown, timeline, and mindset.",
+      "link": "#",
+      "readTime": "85 min",
+      "icon": "🏛️"
+    },
+    {
+      "id": "res-17",
+      "title": "Managing Exam Stress — Mental Health Guide",
+      "type": "Articles",
+      "category": "Wellbeing",
+      "description": "Practical strategies for sleep, focus, and anxiety during exam season.",
+      "link": "#",
+      "readTime": "6 min",
+      "icon": "🧘"
+    },
+    {
+      "id": "res-18",
+      "title": "LinkedIn for Students — Complete Playbook",
+      "type": "eBooks",
+      "category": "Career Skills",
+      "description": "Build a profile that attracts recruiters even before you graduate.",
+      "link": "#",
+      "readTime": "PDF · 30 pages",
+      "icon": "🔗"
+    },
+    {
+      "id": "res-19",
+      "title": "Government Exam Calendar 2026",
+      "type": "Checklists",
+      "category": "Exam Prep",
+      "description": "Important dates for UPSC, SSC, Banking, Railways and more.",
+      "link": "#",
+      "readTime": "3 pages",
+      "icon": "📅"
+    },
+    {
+      "id": "res-20",
+      "title": "Freelancing 101 for Beginners",
+      "type": "Articles",
+      "category": "Career Skills",
+      "description": "How to find your first client, price your work, and manage taxes.",
+      "link": "#",
+      "readTime": "9 min",
+      "icon": "💻"
+    }
+  ]
+}

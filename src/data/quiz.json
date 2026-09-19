@@ -1,0 +1,324 @@
+{
+  "quizzes": [
+    {
+      "id": "science",
+      "label": "Science & Research",
+      "icon": "🔬",
+      "description": "For curious minds who love experiments, logic, and discovery.",
+      "questions": [
+        {
+          "q": "Which activity sounds most exciting?",
+          "options": [
+            { "text": "Conducting a chemistry experiment", "traits": ["analytical", "research"] },
+            { "text": "Building a robot", "traits": ["analytical", "building"] },
+            { "text": "Solving a complex math problem", "traits": ["analytical", "logic"] },
+            { "text": "Studying how the human body works", "traits": ["research", "helping"] }
+          ]
+        },
+        {
+          "q": "Your ideal weekend project would be:",
+          "options": [
+            { "text": "Coding a small app", "traits": ["building", "logic"] },
+            { "text": "Reading a science journal", "traits": ["research", "analytical"] },
+            { "text": "Volunteering at a health camp", "traits": ["helping", "research"] },
+            { "text": "Designing a physics model", "traits": ["analytical", "building"] }
+          ]
+        },
+        {
+          "q": "Which subject do you enjoy most?",
+          "options": [
+            { "text": "Physics", "traits": ["analytical", "logic"] },
+            { "text": "Chemistry", "traits": ["research", "analytical"] },
+            { "text": "Biology", "traits": ["research", "helping"] },
+            { "text": "Mathematics", "traits": ["logic", "analytical"] }
+          ]
+        },
+        {
+          "q": "How do you prefer to solve problems?",
+          "options": [
+            { "text": "Break it into logical steps", "traits": ["logic", "analytical"] },
+            { "text": "Experiment until it works", "traits": ["research", "building"] },
+            { "text": "Consult others and collaborate", "traits": ["helping", "communication"] },
+            { "text": "Sketch a plan first", "traits": ["building", "creative"] }
+          ]
+        },
+        {
+          "q": "Which career sounds most appealing?",
+          "options": [
+            { "text": "Software Engineer", "traits": ["building", "logic"] },
+            { "text": "Doctor", "traits": ["helping", "research"] },
+            { "text": "Data Scientist", "traits": ["analytical", "logic"] },
+            { "text": "Civil Engineer", "traits": ["building", "analytical"] }
+          ]
+        },
+        {
+          "q": "What motivates you most at work?",
+          "options": [
+            { "text": "Discovering something new", "traits": ["research"] },
+            { "text": "Solving hard problems", "traits": ["analytical", "logic"] },
+            { "text": "Helping people directly", "traits": ["helping"] },
+            { "text": "Building things people use", "traits": ["building"] }
+          ]
+        },
+        {
+          "q": "In group projects, you usually:",
+          "options": [
+            { "text": "Lead the research", "traits": ["research", "analytical"] },
+            { "text": "Handle the technical parts", "traits": ["building", "logic"] },
+            { "text": "Coordinate the team", "traits": ["communication", "helping"] },
+            { "text": "Design the presentation", "traits": ["creative", "communication"] }
+          ]
+        },
+        {
+          "q": "Which achievement would mean the most?",
+          "options": [
+            { "text": "Publishing a research paper", "traits": ["research"] },
+            { "text": "Launching a useful product", "traits": ["building"] },
+            { "text": "Saving a patient's life", "traits": ["helping"] },
+            { "text": "Winning a Math Olympiad", "traits": ["logic", "analytical"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commerce",
+      "label": "Commerce & Business",
+      "icon": "💼",
+      "description": "For strategic thinkers who love numbers, markets, and enterprise.",
+      "questions": [
+        {
+          "q": "Which task excites you most?",
+          "options": [
+            { "text": "Analyzing a company's profit trends", "traits": ["analytical", "logic"] },
+            { "text": "Pitching a business idea", "traits": ["communication", "leadership"] },
+            { "text": "Managing a team's budget", "traits": ["leadership", "analytical"] },
+            { "text": "Negotiating a deal", "traits": ["communication", "leadership"] }
+          ]
+        },
+        {
+          "q": "Your ideal work environment is:",
+          "options": [
+            { "text": "A stock trading floor", "traits": ["analytical", "leadership"] },
+            { "text": "A startup office", "traits": ["leadership", "creative"] },
+            { "text": "A consulting firm", "traits": ["communication", "analytical"] },
+            { "text": "Your own venture", "traits": ["leadership", "creative"] }
+          ]
+        },
+        {
+          "q": "Which subject do you enjoy most?",
+          "options": [
+            { "text": "Accountancy", "traits": ["analytical", "logic"] },
+            { "text": "Economics", "traits": ["analytical", "research"] },
+            { "text": "Business Studies", "traits": ["leadership", "communication"] },
+            { "text": "Entrepreneurship", "traits": ["creative", "leadership"] }
+          ]
+        },
+        {
+          "q": "When you see a business news headline, you:",
+          "options": [
+            { "text": "Check how it affects markets", "traits": ["analytical"] },
+            { "text": "Wonder about the strategy behind it", "traits": ["leadership"] },
+            { "text": "Think of ways to improve it", "traits": ["creative"] },
+            { "text": "Discuss it with friends", "traits": ["communication"] }
+          ]
+        },
+        {
+          "q": "Which career path calls you?",
+          "options": [
+            { "text": "Chartered Accountant", "traits": ["analytical", "logic"] },
+            { "text": "Investment Banker", "traits": ["analytical", "leadership"] },
+            { "text": "Marketing Manager", "traits": ["creative", "communication"] },
+            { "text": "Entrepreneur", "traits": ["leadership", "creative"] }
+          ]
+        },
+        {
+          "q": "What drives you at work?",
+          "options": [
+            { "text": "Growing revenue", "traits": ["leadership", "analytical"] },
+            { "text": "Solving client problems", "traits": ["communication", "helping"] },
+            { "text": "Building a brand", "traits": ["creative", "communication"] },
+            { "text": "Leading a team to victory", "traits": ["leadership"] }
+          ]
+        },
+        {
+          "q": "You're happiest when:",
+          "options": [
+            { "text": "Balancing spreadsheets", "traits": ["analytical", "logic"] },
+            { "text": "Presenting to stakeholders", "traits": ["communication", "leadership"] },
+            { "text": "Brainstorming ideas", "traits": ["creative"] },
+            { "text": "Closing a big deal", "traits": ["leadership", "communication"] }
+          ]
+        },
+        {
+          "q": "Which achievement thrills you most?",
+          "options": [
+            { "text": "Becoming a CFO", "traits": ["analytical", "leadership"] },
+            { "text": "Launching a successful startup", "traits": ["leadership", "creative"] },
+            { "text": "Cracking a top MBA", "traits": ["analytical", "communication"] },
+            { "text": "Winning a business case competition", "traits": ["leadership", "communication"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arts",
+      "label": "Arts & Humanities",
+      "icon": "🎨",
+      "description": "For expressive souls who thrive on creativity, stories, and ideas.",
+      "questions": [
+        {
+          "q": "Which activity lights you up?",
+          "options": [
+            { "text": "Writing a short story", "traits": ["creative", "communication"] },
+            { "text": "Painting or sketching", "traits": ["creative"] },
+            { "text": "Debating social issues", "traits": ["communication", "research"] },
+            { "text": "Counseling a friend", "traits": ["helping", "communication"] }
+          ]
+        },
+        {
+          "q": "Your ideal weekend is:",
+          "options": [
+            { "text": "Visiting an art gallery", "traits": ["creative"] },
+            { "text": "Reading a novel", "traits": ["creative", "research"] },
+            { "text": "Attending a theatre play", "traits": ["creative", "communication"] },
+            { "text": "Volunteering for a cause", "traits": ["helping"] }
+          ]
+        },
+        {
+          "q": "Which subject do you enjoy most?",
+          "options": [
+            { "text": "Literature", "traits": ["creative", "communication"] },
+            { "text": "Psychology", "traits": ["helping", "research"] },
+            { "text": "History", "traits": ["research"] },
+            { "text": "Fine Arts", "traits": ["creative"] }
+          ]
+        },
+        {
+          "q": "How do you express yourself best?",
+          "options": [
+            { "text": "Through writing", "traits": ["creative", "communication"] },
+            { "text": "Through visuals", "traits": ["creative"] },
+            { "text": "Through conversation", "traits": ["communication", "helping"] },
+            { "text": "Through performance", "traits": ["creative", "communication"] }
+          ]
+        },
+        {
+          "q": "Which career excites you most?",
+          "options": [
+            { "text": "Graphic Designer", "traits": ["creative"] },
+            { "text": "Content Writer", "traits": ["creative", "communication"] },
+            { "text": "Clinical Psychologist", "traits": ["helping", "research"] },
+            { "text": "Film Director", "traits": ["creative", "leadership"] }
+          ]
+        },
+        {
+          "q": "What matters most in your work?",
+          "options": [
+            { "text": "Freedom to create", "traits": ["creative"] },
+            { "text": "Making an impact on people", "traits": ["helping"] },
+            { "text": "Telling meaningful stories", "traits": ["creative", "communication"] },
+            { "text": "Learning continuously", "traits": ["research"] }
+          ]
+        },
+        {
+          "q": "In group projects, you usually:",
+          "options": [
+            { "text": "Conceptualize the idea", "traits": ["creative"] },
+            { "text": "Write the content", "traits": ["creative", "communication"] },
+            { "text": "Present to the class", "traits": ["communication"] },
+            { "text": "Handle the research", "traits": ["research"] }
+          ]
+        },
+        {
+          "q": "Which achievement would mean the most?",
+          "options": [
+            { "text": "Publishing a book", "traits": ["creative", "communication"] },
+            { "text": "Winning a design award", "traits": ["creative"] },
+            { "text": "Helping someone heal", "traits": ["helping"] },
+            { "text": "Directing a hit film", "traits": ["creative", "leadership"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "label": "Technology & Engineering",
+      "icon": "⚙️",
+      "description": "For builders and problem-solvers who love systems, code, and machines.",
+      "questions": [
+        {
+          "q": "Which sounds most fun?",
+          "options": [
+            { "text": "Building a website", "traits": ["building", "creative"] },
+            { "text": "Hacking a security system (ethically!)", "traits": ["building", "analytical"] },
+            { "text": "Designing a bridge", "traits": ["building", "analytical"] },
+            { "text": "Training an AI model", "traits": ["analytical", "research"] }
+          ]
+        },
+        {
+          "q": "Your dream tool is:",
+          "options": [
+            { "text": "A powerful laptop", "traits": ["building", "logic"] },
+            { "text": "A 3D printer", "traits": ["building", "creative"] },
+            { "text": "A robotics kit", "traits": ["building", "analytical"] },
+            { "text": "A data center", "traits": ["analytical", "logic"] }
+          ]
+        },
+        {
+          "q": "Which subject is your favorite?",
+          "options": [
+            { "text": "Computer Science", "traits": ["building", "logic"] },
+            { "text": "Physics", "traits": ["analytical", "logic"] },
+            { "text": "Mathematics", "traits": ["logic", "analytical"] },
+            { "text": "Electronics", "traits": ["building", "analytical"] }
+          ]
+        },
+        {
+          "q": "How do you approach a bug?",
+          "options": [
+            { "text": "Read the logs carefully", "traits": ["analytical"] },
+            { "text": "Rewrite the code", "traits": ["building"] },
+            { "text": "Search online for solutions", "traits": ["research"] },
+            { "text": "Ask a peer for help", "traits": ["communication"] }
+          ]
+        },
+        {
+          "q": "Which career excites you most?",
+          "options": [
+            { "text": "Software Engineer", "traits": ["building", "logic"] },
+            { "text": "Cybersecurity Analyst", "traits": ["analytical", "building"] },
+            { "text": "Data Scientist", "traits": ["analytical", "research"] },
+            { "text": "UX Designer", "traits": ["creative", "communication"] }
+          ]
+        },
+        {
+          "q": "What excites you at work?",
+          "options": [
+            { "text": "Shipping new features", "traits": ["building"] },
+            { "text": "Finding hidden vulnerabilities", "traits": ["analytical"] },
+            { "text": "Discovering patterns in data", "traits": ["research", "analytical"] },
+            { "text": "Designing intuitive interfaces", "traits": ["creative", "communication"] }
+          ]
+        },
+        {
+          "q": "In group projects, you usually:",
+          "options": [
+            { "text": "Write the core code", "traits": ["building", "logic"] },
+            { "text": "Design the architecture", "traits": ["analytical", "building"] },
+            { "text": "Test and debug", "traits": ["analytical", "logic"] },
+            { "text": "Handle the UI/UX", "traits": ["creative", "communication"] }
+          ]
+        },
+        {
+          "q": "Which achievement thrills you most?",
+          "options": [
+            { "text": "Launching a popular app", "traits": ["building", "creative"] },
+            { "text": "Preventing a major cyberattack", "traits": ["analytical"] },
+            { "text": "Publishing an AI research paper", "traits": ["research", "analytical"] },
+            { "text": "Winning a hackathon", "traits": ["building", "leadership"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "story-1",
+    "name": "Michael Chen",
+    "domain": "Engineering",
+    "role": "Senior Software Engineer @ Google",
+    "photo": "https://i.pravatar.cc/300?img=12",
+    "journey": "From a small-town public school to Google HQ. Failed my first internship interview, rebuilt my skills for 6 months, and cracked it on the second try.",
+    "quote": "Persistence beats talent when talent doesn't persist.",
+    "yearsInField": 6
+  },
+  {
+    "id": "story-2",
+    "name": "Sarah Johnson",
+    "domain": "Medicine",
+    "role": "Cardiologist @ Mayo Clinic",
+    "photo": "https://i.pravatar.cc/300?img=45",
+    "journey": "Took a gap year after my MCAT, spent it volunteering at rural health clinics. That year taught me more than any textbook. Matched into cardiology residency on my second try.",
+    "quote": "Every setback is a setup for a comeback.",
+    "yearsInField": 12
+  },
+  {
+    "id": "story-3",
+    "name": "David Martinez",
+    "domain": "Business",
+    "role": "Founder & CEO, FinFlow",
+    "photo": "https://i.pravatar.cc/300?img=33",
+    "journey": "Left a cushy consulting job at 26 to build a fintech startup. First 2 years were brutal — 3 pivots, 1 near-shutdown. Today we serve 500K+ users.",
+    "quote": "You miss 100% of the shots you don't take.",
+    "yearsInField": 8
+  },
+  {
+    "id": "story-4",
+    "name": "Emma Wilson",
+    "domain": "Arts",
+    "role": "Art Director @ Ogilvy",
+    "photo": "https://i.pravatar.cc/300?img=47",
+    "journey": "Parents wanted engineering. I chose design. Interned for free for a year, built a portfolio of 50+ projects, and landed my dream agency role.",
+    "quote": "Create the work you want to be hired for.",
+    "yearsInField": 5
+  },
+  {
+    "id": "story-5",
+    "name": "James Anderson",
+    "domain": "Government",
+    "role": "Foreign Service Officer, U.S. State Department",
+    "photo": "https://i.pravatar.cc/300?img=15",
+    "journey": "Passed the Foreign Service Exam on my 4th attempt. Worked night shifts at a warehouse for 3 years while studying. Every failure taught me what not to do next time.",
+    "quote": "Success is not final, failure is not fatal.",
+    "yearsInField": 4
+  },
+  {
+    "id": "story-6",
+    "name": "Sophia Rodriguez",
+    "domain": "Technology",
+    "role": "ML Engineer @ Microsoft Research",
+    "photo": "https://i.pravatar.cc/300?img=48",
+    "journey": "From a state college to MS Research. Taught myself ML from YouTube and Kaggle. Won 3 hackathons before landing my dream role.",
+    "quote": "Your degree opens doors. Your skills keep them open.",
+    "yearsInField": 4
+  },
+  {
+    "id": "story-7",
+    "name": "Daniel Kim",
+    "domain": "Healthcare",
+    "role": "Physiotherapist & Sports Rehab Specialist",
+    "photo": "https://i.pravatar.cc/300?img=13",
+    "journey": "Worked with 3 NBA teams. Started with a small clinic in Austin, no client base. Today I run a 12-member rehab center.",
+    "quote": "Healing is a partnership, not a prescription.",
+    "yearsInField": 10
+  },
+  {
+    "id": "story-8",
+    "name": "Rachel Green",
+    "domain": "Creative",
+    "role": "Content Creator (2M+ subscribers)",
+    "photo": "https://i.pravatar.cc/300?img=49",
+    "journey": "Started a YouTube channel about study tips during college. Took 3 years to hit 1000 subs, then exploded. Now I mentor students full-time.",
+    "quote": "Consistency is the only magic trick that works.",
+    "yearsInField": 6
+  },
+  {
+    "id": "story-9",
+    "name": "Tyler Brooks",
+    "domain": "Engineering",
+    "role": "Mechanical Engineer @ Tesla",
+    "photo": "https://i.pravatar.cc/300?img=52",
+    "journey": "Studied in Michigan, worked on 5 Formula SAE cars. Applied to Tesla 4 times before getting a callback. Never stopped learning CAD.",
+    "quote": "Build things. Even small things. That's how you grow.",
+    "yearsInField": 7
+  },
+  {
+    "id": "story-10",
+    "name": "Olivia Parker",
+    "domain": "Business",
+    "role": "CPA & Financial Advisor",
+    "photo": "https://i.pravatar.cc/300?img=44",
+    "journey": "Passed all 4 CPA sections on first attempt while working full-time. Managed 60-hour weeks and 4-hour study nights for 8 months straight.",
+    "quote": "Discipline is choosing what you want most over what you want now.",
+    "yearsInField": 9
+  },
+  {
+    "id": "story-11",
+    "name": "Nathan Hughes",
+    "domain": "Medicine",
+    "role": "Pediatrician & Author",
+    "photo": "https://i.pravatar.cc/300?img=14",
+    "journey": "Wrote a children's health book alongside my residency. Rejected by 12 publishers before #13 said yes. Now a bestseller in 3 languages.",
+    "quote": "Your side hustle might become your main story.",
+    "yearsInField": 11
+  },
+  {
+    "id": "story-12",
+    "name": "Maya Thompson",
+    "domain": "Technology",
+    "role": "UX Lead @ Airbnb",
+    "photo": "https://i.pravatar.cc/300?img=46",
+    "journey": "Started as a graphic designer, self-taught UX in 6 months. Cold-emailed 40 companies for feedback. Landed at Airbnb via a Twitter DM.",
+    "quote": "Your portfolio is your real resume.",
+    "yearsInField": 8
+  }
+]
