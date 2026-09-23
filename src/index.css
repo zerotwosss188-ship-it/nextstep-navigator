@@ -1389,3 +1389,74 @@ html.dark .bg-white a {
 /* But keep accent colors */
 html.dark .bg-white .text-saffron { color: #FF8A00 !important; }
 html.dark .bg-white .text-teal { color: #33CEBB !important; }
+
+/* ============================================================
+   CARD ACTION BUTTONS — Dark Mode Polish
+   Heart + Compare circles on career cards
+   ============================================================ */
+
+/* Dark mode — replace stark white circles with dark glass */
+html.dark button[aria-label="Bookmark"],
+html.dark button[aria-label="Compare"] {
+  background: rgba(20, 40, 71, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(247, 249, 252, 0.12) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Hover state — lighten, not stark white */
+html.dark button[aria-label="Bookmark"]:hover,
+html.dark button[aria-label="Compare"]:hover {
+  background: rgba(26, 53, 96, 0.95) !important;
+  border-color: rgba(255, 138, 0, 0.4) !important;
+  box-shadow: 0 6px 16px rgba(255, 138, 0, 0.15) !important;
+}
+
+/* Heart icon default — light grey */
+html.dark button[aria-label="Bookmark"] svg {
+  color: rgba(247, 249, 252, 0.5) !important;
+}
+
+/* Heart icon hover — saffron */
+html.dark button[aria-label="Bookmark"]:hover svg {
+  color: #FF8A00 !important;
+}
+
+/* Bookmarked heart — fill saffron */
+html.dark button[aria-label="Bookmark"] svg.fill-saffron {
+  color: #FF8A00 !important;
+  fill: #FF8A00 !important;
+}
+
+/* Compare button — active state */
+html.dark button[aria-label="Compare"][class*="bg-navy"] {
+  background: linear-gradient(135deg, #FF8A00, #E07B00) !important;
+  border-color: #FF8A00 !important;
+  color: #ffffff !important;
+}
+
+html.dark button[aria-label="Compare"][class*="bg-navy"] svg {
+  color: #ffffff !important;
+}
+
+/* The ⚖ emoji inside compare button — dark mode */
+html.dark button[aria-label="Compare"] {
+  color: rgba(247, 249, 252, 0.55) !important;
+  font-size: 12px !important;
+}
+
+html.dark button[aria-label="Compare"]:hover {
+  color: #FF8A00 !important;
+}
+
+/* Group hover reveal fix — comparison button appears on card hover */
+html.dark .group:hover button[aria-label="Compare"] {
+  background: rgba(20, 40, 71, 0.85) !important;
+  border: 1px solid rgba(247, 249, 252, 0.12) !important;
+}
+
+html.dark .group:hover button[aria-label="Compare"]:hover {
+  background: rgba(26, 53, 96, 0.95) !important;
+  border-color: rgba(255, 138, 0, 0.4) !important;
+}
