@@ -2,31 +2,31 @@
   "resources": [
     {
       "id": "res-1",
-      "title": "Choosing Your Stream After 10th — Complete Guide",
+      "title": "Choosing Your College Major — Complete Guide",
       "type": "Articles",
-      "category": "Stream Selection",
-      "description": "Understand the Science, Commerce, and Arts streams and how to choose based on your strengths and interests.",
-      "link": "#",
+      "category": "College Prep",
+      "description": "Understand how to pick a major based on your strengths, career goals, and earning potential.",
+      "link": "https://www.collegeboard.org/",
       "readTime": "8 min",
       "icon": "🧭"
     },
     {
       "id": "res-2",
-      "title": "Top 50 Scholarships for Indian Students 2026",
+      "title": "Top 50 US Scholarships for Students 2026",
       "type": "Articles",
       "category": "Funding",
-      "description": "Curated list of merit-based and need-based scholarships for UG and PG students.",
-      "link": "#",
+      "description": "Curated list of merit-based and need-based scholarships for undergraduate and graduate students.",
+      "link": "https://www.scholarships.com/",
       "readTime": "12 min",
       "icon": "🎓"
     },
     {
       "id": "res-3",
-      "title": "How to Prepare for NEET/JEE While in Class 11",
+      "title": "SAT & ACT Prep — Complete Strategy",
       "type": "Articles",
       "category": "Exam Prep",
-      "description": "A realistic 18-month roadmap balancing school, coaching, and self-study.",
-      "link": "#",
+      "description": "A realistic 6-month roadmap for acing the SAT or ACT while balancing school and activities.",
+      "link": "https://www.khanacademy.org/test-prep/sat",
       "readTime": "10 min",
       "icon": "📚"
     },
@@ -36,7 +36,7 @@
       "type": "Articles",
       "category": "Self Discovery",
       "description": "How to separate parental expectations from your own interests and values.",
-      "link": "#",
+      "link": "https://www.apa.org/topics/careers",
       "readTime": "7 min",
       "icon": "🧠"
     },
@@ -46,17 +46,17 @@
       "type": "eBooks",
       "category": "Career Skills",
       "description": "42-page ebook with templates for freshers, mid-level, and senior professionals.",
-      "link": "#",
+      "link": "https://www.themuse.com/advice/how-to-write-a-resume",
       "readTime": "PDF · 42 pages",
       "icon": "📄"
     },
     {
       "id": "res-6",
-      "title": "The Complete Guide to Study Abroad",
+      "title": "The Complete Guide to Study Abroad (USA)",
       "type": "eBooks",
       "category": "Study Abroad",
-      "description": "From shortlisting universities to visa interviews — everything in one place.",
-      "link": "#",
+      "description": "From shortlisting universities to F-1 visa interviews — everything in one place.",
+      "link": "https://educationusa.state.gov/",
       "readTime": "PDF · 80 pages",
       "icon": "✈️"
     },
@@ -66,7 +66,7 @@
       "type": "eBooks",
       "category": "Job Roles",
       "description": "Step-by-step guide with skills, projects, and portfolio tips for aspiring data scientists.",
-      "link": "#",
+      "link": "https://www.kaggle.com/learn",
       "readTime": "PDF · 65 pages",
       "icon": "📊"
     },
@@ -76,7 +76,7 @@
       "type": "eBooks",
       "category": "Soft Skills",
       "description": "Practical techniques to overcome stage fear and deliver confident presentations.",
-      "link": "#",
+      "link": "https://www.ted.com/playlists/574/how_to_make_a_great_presentation",
       "readTime": "PDF · 38 pages",
       "icon": "🎤"
     },
@@ -86,7 +86,7 @@
       "type": "Checklists",
       "category": "Interview",
       "description": "Everything to prepare 24 hours, 2 hours, and 10 minutes before your interview.",
-      "link": "#",
+      "link": "https://www.indeed.com/career-advice/interviewing",
       "readTime": "1 page",
       "icon": "✅"
     },
@@ -96,7 +96,7 @@
       "type": "Checklists",
       "category": "Admissions",
       "description": "Documents, deadlines, and follow-ups — don't miss a single step.",
-      "link": "#",
+      "link": "https://www.commonapp.org/",
       "readTime": "1 page",
       "icon": "📋"
     },
@@ -106,7 +106,7 @@
       "type": "Checklists",
       "category": "Career Skills",
       "description": "Your first 90 days — what to do, what to avoid, and who to befriend.",
-      "link": "#",
+      "link": "https://www.themuse.com/advice/first-90-days-new-job",
       "readTime": "2 pages",
       "icon": "💼"
     },
@@ -115,8 +115,8 @@
       "title": "Study Abroad Application Checklist",
       "type": "Checklists",
       "category": "Study Abroad",
-      "description": "SOPs, LORs, transcripts, test scores — a single-page tracker.",
-      "link": "#",
+      "description": "SOPs, recommendation letters, transcripts, test scores — a single-page tracker.",
+      "link": "https://educationusa.state.gov/your-5-steps-us-study",
       "readTime": "1 page",
       "icon": "🌍"
     },
@@ -126,7 +126,7 @@
       "type": "Webinars",
       "category": "Industry Insights",
       "description": "60-minute session on which careers will thrive in the AI era.",
-      "link": "#",
+      "link": "https://www.youtube.com/@TED",
       "readTime": "60 min",
       "icon": "🤖"
     },
@@ -135,8 +135,8 @@
       "title": "Cracking Product-Based Company Interviews",
       "type": "Webinars",
       "category": "Interview",
-      "description": "Insights from hiring managers at top tech companies.",
-      "link": "#",
+      "description": "Insights from hiring managers at top US tech companies.",
+      "link": "https://www.youtube.com/@NeetCode",
       "readTime": "75 min",
       "icon": "💡"
     },
@@ -146,17 +146,17 @@
       "type": "Webinars",
       "category": "Job Roles",
       "description": "Live portfolio reviews with working designers from top agencies.",
-      "link": "#",
+      "link": "https://www.youtube.com/@The Futur",
       "readTime": "90 min",
       "icon": "🎨"
     },
     {
       "id": "res-16",
-      "title": "UPSC Preparation Strategy Webinar",
+      "title": "US Civil Service & Government Careers",
       "type": "Webinars",
       "category": "Exam Prep",
-      "description": "By an IAS officer — syllabus breakdown, timeline, and mindset.",
-      "link": "#",
+      "description": "Guide to USAJobs, federal internships, and government career paths.",
+      "link": "https://www.usajobs.gov/",
       "readTime": "85 min",
       "icon": "🏛️"
     },
@@ -166,7 +166,7 @@
       "type": "Articles",
       "category": "Wellbeing",
       "description": "Practical strategies for sleep, focus, and anxiety during exam season.",
-      "link": "#",
+      "link": "https://www.apa.org/topics/stress",
       "readTime": "6 min",
       "icon": "🧘"
     },
@@ -176,17 +176,17 @@
       "type": "eBooks",
       "category": "Career Skills",
       "description": "Build a profile that attracts recruiters even before you graduate.",
-      "link": "#",
+      "link": "https://www.linkedin.com/help/linkedin/answer/a507508",
       "readTime": "PDF · 30 pages",
       "icon": "🔗"
     },
     {
       "id": "res-19",
-      "title": "Government Exam Calendar 2026",
+      "title": "US Standardized Tests Calendar 2026",
       "type": "Checklists",
       "category": "Exam Prep",
-      "description": "Important dates for UPSC, SSC, Banking, Railways and more.",
-      "link": "#",
+      "description": "SAT, ACT, GRE, GMAT, MCAT, LSAT — important test dates and registration deadlines.",
+      "link": "https://www.collegeboard.org/",
       "readTime": "3 pages",
       "icon": "📅"
     },
@@ -196,9 +196,49 @@
       "type": "Articles",
       "category": "Career Skills",
       "description": "How to find your first client, price your work, and manage taxes.",
-      "link": "#",
+      "link": "https://www.upwork.com/resources/beginners-guide-to-freelancing",
       "readTime": "9 min",
       "icon": "💻"
+    },
+    {
+      "id": "res-21",
+      "title": "FAFSA — Federal Student Aid Guide",
+      "type": "Articles",
+      "category": "Funding",
+      "description": "Step-by-step guide to applying for federal financial aid in the US.",
+      "link": "https://studentaid.gov/h/apply-for-aid/fafsa",
+      "readTime": "10 min",
+      "icon": "💵"
+    },
+    {
+      "id": "res-22",
+      "title": "Medical School Admissions (MCAT & AMCAS)",
+      "type": "Articles",
+      "category": "Admissions",
+      "description": "Complete guide to applying to US medical schools through AMCAS.",
+      "link": "https://students-residents.aamc.org/applying-medical-school/",
+      "readTime": "15 min",
+      "icon": "🩺"
+    },
+    {
+      "id": "res-23",
+      "title": "Law School Admissions (LSAT & LSAC)",
+      "type": "Articles",
+      "category": "Admissions",
+      "description": "How to apply to law school — LSAT prep, personal statement, and LSAC.",
+      "link": "https://www.lsac.org/",
+      "readTime": "12 min",
+      "icon": "⚖️"
+    },
+    {
+      "id": "res-24",
+      "title": "US College Essay Writing — Ultimate Guide",
+      "type": "eBooks",
+      "category": "Admissions",
+      "description": "Write a compelling personal statement that stands out to admissions officers.",
+      "link": "https://www.collegeessayguy.com/",
+      "readTime": "PDF · 50 pages",
+      "icon": "✍️"
     }
   ]
 }

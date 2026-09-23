@@ -1,3 +1,4 @@
+import { saveUser } from '../lib/saveUser'
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
@@ -76,17 +77,23 @@ export default function Home() {
     setError('')
   }
 
-  const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
     e.preventDefault()
     if (!form.name.trim()) return setError('Please enter your name.')
     if (!form.userType) return setError('Please select a user category.')
 
     const matched = USER_TYPES.find((t) => t.id === form.userType)
-    loginUser({
+    const userData = {
       ...form,
       greeting: matched?.greeting || 'Explorer',
       joinedAt: new Date().toISOString(),
-    })
+    }
+
+    // Save to Supabase (non-blocking — user still logs in if this fails)
+    saveUser(userData)
+
+    // Login locally
+    loginUser(userData)
   }
 
   const handleReset = () => {
@@ -137,12 +144,12 @@ export default function Home() {
             Quick Actions
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { title: 'Career Bank', desc: 'Explore 24 careers with filters.', link: '/career-bank' },
-              { title: 'Interest Quiz', desc: 'Discover your ideal stream.', link: '/quiz' },
-              { title: 'Resource Library', desc: 'Guides, eBooks, and more.', link: '/resources' },
-              { title: 'Success Stories', desc: 'Real journeys from real people.', link: '/success-stories' },
-            ].map((card, i) => (
+           {[
+  { title: 'Career Bank', desc: 'Explore 24 careers with filters.', link: '/career-bank' },
+  { title: 'Interest Quiz', desc: 'Discover your ideal stream.', link: '/quiz' },
+  { title: 'Courses', desc: 'Learn from Harvard, Google, YC.', link: '/courses' },
+  { title: 'Success Stories', desc: 'Real journeys from real people.', link: '/success-stories' },
+].map((card, i) => (
               <motion.div
                 key={card.title}
                 initial={{ opacity: 0, y: 20 }}

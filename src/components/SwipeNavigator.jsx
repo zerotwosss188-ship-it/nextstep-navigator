@@ -6,6 +6,7 @@ const ROUTE_ORDER = [
   '/',
   '/career-bank',
   '/quiz',
+  '/courses',
   '/multimedia',
   '/success-stories',
   '/resources',

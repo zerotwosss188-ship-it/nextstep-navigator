@@ -8,6 +8,7 @@ const ROUTE_ORDER = [
   '/',
   '/career-bank',
   '/quiz',
+  '/courses',
   '/multimedia',
   '/success-stories',
   '/resources',
@@ -23,6 +24,7 @@ const ROUTE_LABELS = {
   '/': 'Home',
   '/career-bank': 'Career Bank',
   '/quiz': 'Interest Quiz',
+  '/courses': 'Courses',      // ⬅️ ADD THIS
   '/multimedia': 'Multimedia',
   '/success-stories': 'Success Stories',
   '/resources': 'Resource Library',
@@ -32,7 +34,6 @@ const ROUTE_LABELS = {
   '/about': 'About Us',
   '/contact': 'Contact',
 }
-
 export default function SwipeArrows() {
   const { pathname } = useLocation()
   const navigate = useNavigate()

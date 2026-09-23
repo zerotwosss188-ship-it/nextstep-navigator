@@ -8,7 +8,6 @@ import Footer from './components/Footer'
 import CompareBar from './components/CompareBar'
 import ProtectedRoute from './components/ProtectedRoute'
 import SwipeNavigator from './components/SwipeNavigator'
-import SwipeArrows from './components/SwipeArrows'
 import SwipeHint from './components/SwipeHint'
 import CommandPalette from './components/CommandPalette'
 import AdvisorChat from './components/AdvisorChat'
@@ -27,6 +26,7 @@ const Contact = lazy(() => import('./pages/Contact'))
 const About = lazy(() => import('./pages/About'))
 const Profile = lazy(() => import('./pages/Profile'))
 const Compare = lazy(() => import('./pages/Compare'))
+const Courses = lazy(() => import('./pages/Courses'))
 
 function PageLoader() {
   return (
@@ -48,6 +48,7 @@ function AnimatedRoutes() {
         <Route path="/career-bank" element={<ProtectedRoute><CareerBank /></ProtectedRoute>} />
         <Route path="/bookmarks" element={<ProtectedRoute><Bookmarks /></ProtectedRoute>} />
         <Route path="/quiz" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
+        <Route path="/courses" element={<ProtectedRoute><Courses /></ProtectedRoute>} />
         <Route path="/multimedia" element={<ProtectedRoute><Multimedia /></ProtectedRoute>} />
         <Route path="/success-stories" element={<ProtectedRoute><SuccessStories /></ProtectedRoute>} />
         <Route path="/resources" element={<ProtectedRoute><ResourceLibrary /></ProtectedRoute>} />
@@ -91,7 +92,6 @@ export default function App() {
         <>
           <ScrollToTop />
           <SwipeNavigator />
-          <SwipeArrows />
           <SwipeHint />
           <SkipLink />
           <div className="min-h-screen flex flex-col bg-offwhite">

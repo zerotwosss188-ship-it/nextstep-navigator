@@ -1,10 +1,10 @@
-import { logActivity } from '../utils/activityTracker'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight, RotateCcw, Sparkles, TrendingUp, Award } from 'lucide-react'
 import quizData from '../data/quiz.json'
 import { computeResult } from '../utils/recommendation'
+import { logActivity } from '../utils/activityTracker'
 
 export default function Quiz() {
   const [stage, setStage] = useState('select') // select | taking | result
@@ -24,18 +24,29 @@ export default function Quiz() {
   }
 
   const pickOption = (optionIndex) => {
+    if (!quiz) return
     const next = [...answers]
     next[current] = optionIndex
     setAnswers(next)
 
     if (current < quiz.questions.length - 1) {
       setTimeout(() => setCurrent((c) => c + 1), 150)
-        } else {
+    } else {
       const computed = computeResult(next, quiz)
       setResult(computed)
       setStage('result')
 
+      // Celebrate
       import('../utils/celebrate').then((m) => m.celebrate())
+
+      // Save trait scores for match computation
+      try {
+        const traitScores = {}
+        computed.ranked.forEach((r) => {
+          traitScores[r.trait] = r.score
+        })
+        localStorage.setItem('nsn-user-traits', JSON.stringify(traitScores))
+      } catch {}
 
       // Save to learning history
       try {
@@ -52,14 +63,6 @@ export default function Quiz() {
         localStorage.setItem(KEY, JSON.stringify(history.slice(-20)))
       } catch {}
 
-      // ⬇️ NEW: Save trait scores for match
-      try {
-        const traitScores = {}
-        computed.ranked.forEach((r) => {
-          traitScores[r.trait] = r.score
-        })
-        localStorage.setItem('nsn-user-traits', JSON.stringify(traitScores))
-      } catch {}
       // Log activity
       logActivity('quiz', {
         quizId: quiz.id,
@@ -78,9 +81,12 @@ export default function Quiz() {
     setResult(null)
   }
 
-  const progress = quiz
-    ? ((current + (answers[current] !== undefined ? 1 : 0)) / quiz.questions.length) * 100
-    : 0
+  const progress =
+    quiz && quiz.questions
+      ? ((current + (answers[current] !== undefined ? 1 : 0)) /
+          quiz.questions.length) *
+        100
+      : 0
 
   // ---------- SELECT STAGE ----------
   if (stage === 'select') {
@@ -116,15 +122,15 @@ export default function Quiz() {
             ))}
           </select>
 
-          {quizId && (
+          {quizId && quiz && (
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               className="bg-navy/5 rounded-2xl p-5 mb-6"
             >
-              <p className="text-sm text-navy/70">{quiz?.description}</p>
+              <p className="text-sm text-navy/70">{quiz.description}</p>
               <p className="text-xs text-navy/50 mt-2">
-                📝 {quiz?.questions.length} questions · ⏱ ~2 minutes
+                📝 {quiz.questions.length} questions · ⏱ ~2 minutes
               </p>
             </motion.div>
           )}
@@ -142,16 +148,34 @@ export default function Quiz() {
   }
 
   // ---------- TAKING STAGE ----------
-  if (stage === 'taking' && quiz) {
-  const q = quiz.questions[current]
-  return (
-    <section className="max-w-3xl mx-auto px-6 py-16" data-no-swipe>
+  if (stage === 'taking' && quiz && quiz.questions) {
+    const q = quiz.questions[current]
+
+    if (!q) {
+      // Safety guard — if q is somehow undefined, reset
+      return (
+        <section className="max-w-3xl mx-auto px-6 py-16 text-center">
+          <p className="text-navy/60 mb-4">Something went wrong.</p>
+          <button
+            onClick={restart}
+            className="bg-saffron hover:bg-saffron-dark text-white font-semibold px-6 py-3 rounded-xl transition"
+          >
+            Restart Quiz
+          </button>
+        </section>
+      )
+    }
+
+    return (
+      <section className="max-w-3xl mx-auto px-6 py-16" data-no-swipe>
         <div className="mb-8">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-bold uppercase tracking-widest text-navy/50">
               Question {current + 1} / {quiz.questions.length}
             </span>
-            <span className="text-xs font-bold text-saffron">{Math.round(progress)}%</span>
+            <span className="text-xs font-bold text-saffron">
+              {Math.round(progress)}%
+            </span>
           </div>
           <div className="w-full h-2 bg-navy/10 rounded-full overflow-hidden">
             <motion.div
@@ -182,9 +206,9 @@ export default function Quiz() {
                   <button
                     key={i}
                     onClick={() => pickOption(i)}
-                    className={`w-full text-left rounded-xl px-5 py-4 border-2 transition-all font-medium flex items-center gap-3 ${
+                    className={`quiz-option w-full text-left rounded-xl px-5 py-4 border-2 transition-all font-medium flex items-center gap-3 ${
                       isPicked
-                        ? 'border-saffron bg-saffron/5 text-navy'
+                        ? 'border-saffron bg-saffron/10 text-navy selected'
                         : 'border-navy/10 hover:border-navy/30 text-navy/80'
                     }`}
                   >
@@ -231,7 +255,9 @@ export default function Quiz() {
             Your Result
           </p>
           <h1 className="text-4xl font-heading font-bold text-navy mb-3">
-            You're a <span className="text-saffron capitalize">{result.topTrait}</span> Thinker
+            You're a{' '}
+            <span className="text-saffron capitalize">{result.topTrait}</span>{' '}
+            Thinker
           </h1>
           <p className="text-navy/60 max-w-xl mx-auto">
             Based on your answers, here's the stream and careers that best match
@@ -251,9 +277,15 @@ export default function Quiz() {
               Recommended Stream
             </span>
           </div>
-          <h2 className="font-heading font-bold text-3xl mb-2">{result.stream}</h2>
+          <h2 className="font-heading font-bold text-3xl mb-2">
+            {result.stream}
+          </h2>
           <p className="text-white/70 text-sm">
-            Top 3 traits: {result.ranked.slice(0, 3).map((r) => r.trait).join(' · ')}
+            Top 3 traits:{' '}
+            {result.ranked
+              .slice(0, 3)
+              .map((r) => r.trait)
+              .join(' · ')}
           </p>
         </motion.div>
 
@@ -312,7 +344,9 @@ export default function Quiz() {
                     <span className="text-[10px] font-bold uppercase tracking-widest text-saffron">
                       {c.industry}
                     </span>
-                    <h4 className="font-heading font-bold text-navy">{c.title}</h4>
+                    <h4 className="font-heading font-bold text-navy">
+                      {c.title}
+                    </h4>
                     <p className="text-xs text-navy/60 mt-1 line-clamp-2">
                       {c.description}
                     </p>
@@ -341,5 +375,16 @@ export default function Quiz() {
     )
   }
 
-  return null
+  // Fallback
+  return (
+    <section className="max-w-3xl mx-auto px-6 py-16 text-center">
+      <p className="text-navy/60 mb-4">Something went wrong.</p>
+      <button
+        onClick={restart}
+        className="bg-saffron hover:bg-saffron-dark text-white font-semibold px-6 py-3 rounded-xl transition"
+      >
+        Restart Quiz
+      </button>
+    </section>
+  )
 }

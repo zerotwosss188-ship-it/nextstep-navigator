@@ -1,3 +1,5 @@
+import { Moon, Sun, MonitorSmartphone } from 'lucide-react'
+import { useTheme } from '../context/ThemeContext'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Bookmark, Menu, X, ChevronDown, Search, User } from 'lucide-react'
@@ -5,10 +7,12 @@ import { useUser } from '../context/UserContext'
 import { useBookmarks } from '../context/BookmarkContext'
 
 export default function Navbar() {
+  
   const { user } = useUser()
   const { bookmarks } = useBookmarks()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [exploreOpen, setExploreOpen] = useState(false)
+  const { dark, mode, cycleMode } = useTheme()
 
   const navLinkClass = ({ isActive }) =>
     `transition ${isActive ? 'text-saffron' : 'hover:text-saffron'}`
@@ -19,12 +23,14 @@ export default function Navbar() {
     { to: '/resources', label: 'Resource Library' },
     { to: '/admission', label: 'Admission & Coaching' },
     { to: '/feedback', label: 'Feedback' },
+    { to: '/courses', label: 'Courses' },
   ]
 
   const links = [
     { to: '/', label: 'Home' },
     { to: '/career-bank', label: 'Career Bank' },
     { to: '/quiz', label: 'Quiz' },
+    { to: '/courses', label: 'Courses' },
   ]
 
   const openPalette = () => {
@@ -112,6 +118,18 @@ export default function Navbar() {
         {/* Right side */}
         <div className="flex items-center gap-2 md:gap-3">
           {/* Search icon (desktop) */}
+          {user && (
+  <button
+    onClick={cycleMode}
+    className="w-9 h-9 rounded-lg hover:bg-white/10 flex items-center justify-center transition"
+    aria-label={`Theme: ${mode}`}
+    title={`Mode: ${mode} (click to cycle)`}
+  >
+    {mode === 'light' && <Sun size={18} />}
+    {mode === 'dark' && <Moon size={18} />}
+    {mode === 'auto' && <MonitorSmartphone size={18} />}
+  </button>
+)}
           {user && (
             <>
               <button

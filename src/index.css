@@ -1039,3 +1039,353 @@ html.theme-neu nav button[class*="bg-white\/10"] span,
 html.theme-neu nav button[class*="bg-white\/10"] svg {
   color: rgba(11, 30, 63, 0.55) !important;
 }
+/* ============================================================
+   DARK MODE — works with all themes
+   ============================================================ */
+
+/* Base dark palette */
+html.dark body {
+  background: #0B1E3F !important;
+  color: #F7F9FC !important;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* Main content area */
+html.dark .bg-offwhite,
+html.dark main {
+  background: #0B1E3F !important;
+}
+
+/* Cards — dark navy */
+html.dark .bg-white {
+  background: #142847 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  color: #F7F9FC !important;
+}
+
+html.dark .bg-white:hover {
+  background: #1A3560 !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Navy surfaces stay but slightly adjusted */
+html.dark .bg-navy {
+  background: #061228 !important;
+}
+
+html.dark .bg-navy-light {
+  background: #142847 !important;
+}
+
+/* Text overrides */
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #F7F9FC !important;
+}
+
+html.dark .text-navy,
+html.dark .text-navy:hover {
+  color: #F7F9FC !important;
+}
+
+html.dark .text-navy\/60,
+html.dark .text-navy\/70 {
+  color: rgba(247, 249, 252, 0.72) !important;
+}
+
+html.dark .text-navy\/50 {
+  color: rgba(247, 249, 252, 0.55) !important;
+}
+
+html.dark .text-navy\/40 {
+  color: rgba(247, 249, 252, 0.45) !important;
+}
+
+/* Saffron and teal stay vibrant */
+html.dark .text-saffron,
+html.dark .text-teal {
+  /* unchanged */
+}
+
+/* Inputs — dark, subtle border */
+html.dark input,
+html.dark textarea,
+html.dark select {
+  background: #0F2543 !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #F7F9FC !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: rgba(247, 249, 252, 0.4) !important;
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus {
+  border-color: #FF8A00 !important;
+  box-shadow: 0 0 0 3px rgba(255, 138, 0, 0.15) !important;
+}
+
+/* Borders — subtle */
+html.dark .border-navy\/5,
+html.dark .border-navy\/10,
+html.dark .border-navy\/15 {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Filter chips — inactive state */
+html.dark button.bg-white.border,
+html.dark button.border.border-navy\/15 {
+  background: #142847 !important;
+  color: rgba(247, 249, 252, 0.7) !important;
+  border-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+html.dark button.bg-white.border:hover {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  color: #F7F9FC !important;
+}
+
+/* Active chip — stays navy (already dark) */
+html.dark button.bg-navy {
+  background: #F7F9FC !important;
+  color: #0B1E3F !important;
+}
+
+/* Filter chip extra state for the "All" chip that uses bg-navy */
+html.dark button.bg-navy.text-white {
+  background: #1A3560 !important;
+  color: #F7F9FC !important;
+}
+
+/* Search bar */
+html.dark .absolute.top-full > div {
+  background: #142847 !important;
+  border-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+html.dark .absolute.top-full a {
+  color: rgba(247, 249, 252, 0.8) !important;
+}
+
+html.dark .absolute.top-full a:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #FF8A00 !important;
+}
+
+/* Breadcrumbs */
+html.dark nav[aria-label="Breadcrumb"] {
+  background: #061228 !important;
+  border-bottom-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+html.dark nav[aria-label="Breadcrumb"] a,
+html.dark nav[aria-label="Breadcrumb"] span,
+html.dark nav[aria-label="Breadcrumb"] li {
+  color: rgba(247, 249, 252, 0.7) !important;
+}
+
+html.dark nav[aria-label="Breadcrumb"] a:hover {
+  color: #FF8A00 !important;
+}
+
+html.dark nav[aria-label="Breadcrumb"] span.text-saffron {
+  color: #FF8A00 !important;
+}
+
+/* Modals */
+html.dark [data-modal-open="true"] {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+html.dark [data-modal-open="true"] > div[class*="bg-white"] {
+  background: #0F2543 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Toasts — keep their colors but adjust background */
+html.dark [class*="fixed top-20"] > div[class*="bg-teal"] {
+  /* teal stays vibrant */
+}
+
+html.dark [class*="fixed top-20"] > div[class*="bg-navy"] {
+  background: #142847 !important;
+}
+
+/* AI Advisor chat */
+html.dark [class*="fixed bottom-6"][class*="right-6"] {
+  background: #0F2543 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark [class*="fixed bottom-6"] .bg-white,
+html.dark [class*="fixed bottom-6"] [class*="bg-offwhite"] {
+  background: #142847 !important;
+  color: #F7F9FC !important;
+}
+
+html.dark [class*="fixed bottom-6"] input {
+  background: #0B1E3F !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #F7F9FC !important;
+}
+
+/* Footer */
+html.dark footer.bg-navy {
+  background: #061228 !important;
+}
+
+/* Passport card — darker but keeps gradient */
+html.dark .passport-card {
+  background: linear-gradient(135deg, #061228 0%, #0F2543 100%) !important;
+}
+
+/* Theme preview backgrounds in dark mode */
+html.dark .theme-preview.classic {
+  background: #142847;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dark + Classic theme */
+html.dark:not([class*="theme-"]) .bg-white {
+  background: #142847 !important;
+}
+
+/* Dark + Glass theme */
+html.dark.theme-glass .bg-white {
+  background: rgba(20, 40, 71, 0.75) !important;
+  backdrop-filter: blur(24px) saturate(160%) !important;
+  border-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+html.dark.theme-glass,
+html.dark.theme-glass body {
+  background: #061228 !important;
+}
+
+/* Dark + Clay theme */
+html.dark.theme-clay .bg-white {
+  background: #142847 !important;
+  box-shadow:
+    0 20px 40px -8px rgba(0, 0, 0, 0.5),
+    inset 0 -8px 16px -6px rgba(255, 138, 0, 0.08),
+    inset 0 8px 16px -6px rgba(255, 255, 255, 0.05) !important;
+}
+
+html.dark.theme-clay,
+html.dark.theme-clay body {
+  background: #0B1E3F !important;
+}
+
+/* Scrollbar dark */
+html.dark ::-webkit-scrollbar-track {
+  background: #061228 !important;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #1A3560 !important;
+}
+
+/* Selection */
+html.dark ::selection {
+  background: #FF8A00;
+  color: white;
+}
+/* ============================================================
+   DARK MODE — Text + Border Contrast Fixes
+   ============================================================ */
+
+/* All navy text opacity variants → light in dark mode */
+html.dark .text-navy\/80 { color: rgba(247, 249, 252, 0.85) !important; }
+html.dark .text-navy\/70 { color: rgba(247, 249, 252, 0.80) !important; }
+html.dark .text-navy\/60 { color: rgba(247, 249, 252, 0.72) !important; }
+html.dark .text-navy\/50 { color: rgba(247, 249, 252, 0.60) !important; }
+html.dark .text-navy\/40 { color: rgba(247, 249, 252, 0.50) !important; }
+html.dark .text-navy\/30 { color: rgba(247, 249, 252, 0.40) !important; }
+html.dark .text-navy\/20 { color: rgba(247, 249, 252, 0.30) !important; }
+
+/* All navy border opacity variants → light borders in dark mode */
+html.dark .border-navy\/30 { border-color: rgba(247, 249, 252, 0.30) !important; }
+html.dark .border-navy\/20 { border-color: rgba(247, 249, 252, 0.20) !important; }
+html.dark .border-navy\/15 { border-color: rgba(247, 249, 252, 0.18) !important; }
+html.dark .border-navy\/10 { border-color: rgba(247, 249, 252, 0.15) !important; }
+html.dark .border-navy\/5  { border-color: rgba(247, 249, 252, 0.10) !important; }
+
+/* Hover states */
+html.dark .hover\:border-navy\/40:hover { border-color: rgba(247, 249, 252, 0.50) !important; }
+html.dark .hover\:border-navy\/25:hover { border-color: rgba(247, 249, 252, 0.35) !important; }
+html.dark .hover\:text-navy:hover { color: #F7F9FC !important; }
+
+/* ============================================================
+   QUIZ OPTION BUTTONS — explicit fix for both modes
+   ============================================================ */
+
+/* Default quiz option — light mode */
+html:not(.dark) .quiz-option {
+  border-color: rgba(11, 30, 63, 0.10);
+  color: rgba(11, 30, 63, 0.85);
+}
+html:not(.dark) .quiz-option:hover {
+  border-color: rgba(11, 30, 63, 0.30);
+}
+
+/* Default quiz option — dark mode */
+html.dark .quiz-option {
+  background: rgba(20, 40, 71, 0.60) !important;
+  border-color: rgba(247, 249, 252, 0.15) !important;
+  color: rgba(247, 249, 252, 0.90) !important;
+}
+html.dark .quiz-option:hover {
+  background: rgba(20, 40, 71, 0.90) !important;
+  border-color: rgba(247, 249, 252, 0.35) !important;
+  color: #F7F9FC !important;
+}
+
+/* Selected option — stays saffron in both modes */
+html.dark .quiz-option.selected {
+  background: rgba(255, 138, 0, 0.12) !important;
+  border-color: #FF8A00 !important;
+  color: #F7F9FC !important;
+}
+
+/* Letter bubble (A, B, C, D) — dark mode */
+html.dark .quiz-option span:first-child {
+  color: rgba(247, 249, 252, 0.60) !important;
+  border-color: rgba(247, 249, 252, 0.25) !important;
+}
+
+/* ============================================================
+   INPUT PLACEHOLDERS — visible in dark mode
+   ============================================================ */
+html.dark input::placeholder,
+html.dark textarea::placeholder,
+html.dark select::placeholder {
+  color: rgba(247, 249, 252, 0.40) !important;
+}
+
+/* ============================================================
+   EMPTY STATE TEXT + CARD TEXT in dark mode
+   ============================================================ */
+html.dark .bg-white p,
+html.dark .bg-white h1,
+html.dark .bg-white h2,
+html.dark .bg-white h3,
+html.dark .bg-white h4,
+html.dark .bg-white span,
+html.dark .bg-white label,
+html.dark .bg-white a {
+  color: #F7F9FC;
+}
+
+/* But keep accent colors */
+html.dark .bg-white .text-saffron { color: #FF8A00 !important; }
+html.dark .bg-white .text-teal { color: #33CEBB !important; }
