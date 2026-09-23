@@ -107,7 +107,44 @@
     "educationPath": "BS in CS/IT + certifications (CEH, CISSP, CompTIA Security+).",
     "salaryMin": 80000,
     "salaryMax": 180000,
-    "userTypes": ["graduate", "professional"]
+    "userTypes": ["graduate", "professional"],
+    "whatYouDo": [
+      "Monitor networks 24/7 for intrusions and anomalies",
+      "Run penetration tests and vulnerability scans",
+      "Investigate security incidents and write reports",
+      "Patch systems and educate teams on security"
+    ],
+    "roadmap": [
+      { "stage": "High School", "action": "Learn networking basics + Linux", "resource": "CompTIA ITF+, Cisco Netacad" },
+      { "stage": "College Year 1–2", "action": "Study CS/IT + get Security+ certified", "resource": "Professor Messer (free)" },
+      { "stage": "College Year 3", "action": "Practice on TryHackMe + HackTheBox", "resource": "TryHackMe, HackTheBox" },
+      { "stage": "College Year 4", "action": "Internship in SOC + CEH certification", "resource": "LinkedIn, Indeed, Cybrary" },
+      { "stage": "First 2 years", "action": "Specialize — pentesting, cloud security, or forensics", "resource": "OSCP, AWS Security" }
+    ],
+    "freeResources": [
+      { "name": "TryHackMe", "type": "Hands-on labs" },
+      { "name": "Professor Messer (YouTube)", "type": "Security+ prep" },
+      { "name": "Cybrary", "type": "Free courses" },
+      { "name": "OWASP Top 10", "type": "Web security guide" }
+    ],
+    "reality": {
+      "workLife": "Variable — SOC roles have shifts, consulting is intense",
+      "stress": "High — breaches mean 3 AM calls",
+      "remote": "Excellent — most roles are remote-friendly",
+      "future": "Very strong — cyberattacks rising every year"
+    },
+    "commonMistakes": [
+      "Learning tools without understanding networking basics",
+      "Skipping Linux — 80% of security work is on Linux",
+      "Not practicing hands-on (TryHackMe/HackTheBox)",
+      "Chasing certifications without real projects"
+    ],
+    "costAndTime": {
+      "time": "4-year degree + 1 year of hands-on practice",
+      "money": "$0 (self-taught) to $60K (degree)",
+      "hidden": "Certifications $300–$1,500 each, home lab $500"
+    },
+    "careerChangerPath": "Any IT background → 6 months of TryHackMe + Security+ → junior SOC analyst → specialize in pentesting or cloud security within 2 years."
   },
   {
     "id": "ux-designer",
@@ -261,7 +298,7 @@
       "Represent clients before tax authorities"
     ],
     "roadmap": [
-      { "stage": "High School", "action": "Accounting + Math", "resource": "NCERT-equivalent, Khan Academy" },
+      { "stage": "High School", "action": "Accounting + Math", "resource": "Khan Academy, AP Accounting" },
       { "stage": "College", "action": "BS Accounting — 150 credit hours for CPA", "resource": "AICPA resources" },
       { "stage": "CPA Exam", "action": "Pass 4 sections (AUD, FAR, REG, BEC)", "resource": "Becker, Wiley CPAExcel" },
       { "stage": "Early career", "action": "Public accounting (Big 4 or regional firm)", "resource": "Firm training programs" },
@@ -287,7 +324,7 @@
     ],
     "costAndTime": {
       "time": "4–5 years (degree + CPA)",
-      "money": "$3K–5K (exam + prep materials) + degree cost",
+      "money": "$3K–$5K (exam + prep materials) + degree cost",
       "hidden": "150 credit hours requirement often means extra semester"
     },
     "careerChangerPath": "Any bachelor's + accounting credits → CPA exam → entry-level accounting role. Expect 2–3 years part-time."
@@ -314,7 +351,44 @@
     "educationPath": "BS in Marketing/Business + MBA (Marketing) for senior roles.",
     "salaryMin": 75000,
     "salaryMax": 165000,
-    "userTypes": ["graduate", "professional"]
+    "userTypes": ["graduate", "professional"],
+    "whatYouDo": [
+      "Plan campaigns across digital and traditional channels",
+      "Analyze customer data to find what works",
+      "Manage a team of writers, designers, and analysts",
+      "Report ROI to leadership and adjust strategy"
+    ],
+    "roadmap": [
+      { "stage": "High School", "action": "Build a blog or social media presence", "resource": "HubSpot Academy (free)" },
+      { "stage": "College Year 1–2", "action": "Study marketing or business + run side projects", "resource": "Khan Academy, Coursera" },
+      { "stage": "College Year 3", "action": "Marketing internship + learn Google Analytics", "resource": "Google Analytics Academy" },
+      { "stage": "First job", "action": "Start as marketing associate or coordinator", "resource": "LinkedIn, Indeed" },
+      { "stage": "Year 4–6", "action": "Specialize — content, growth, or brand", "resource": "Reforge, advanced courses" }
+    ],
+    "freeResources": [
+      { "name": "HubSpot Academy", "type": "Free certifications" },
+      { "name": "Google Digital Garage", "type": "Free courses" },
+      { "name": "Ahrefs Blog", "type": "SEO guides" },
+      { "name": "Marketing Examples", "type": "Case studies" }
+    ],
+    "reality": {
+      "workLife": "Balanced — occasional campaign sprints",
+      "stress": "Medium — quarterly targets create pressure",
+      "remote": "Very good — most roles are hybrid or remote",
+      "future": "Strong — every company needs marketing, but AI is shifting tactics"
+    },
+    "commonMistakes": [
+      "Focusing on creativity without data — modern marketing is 50% analytics",
+      "Not learning SEO and paid ads basics",
+      "Ignoring storytelling and copywriting skills",
+      "Underestimating the value of a portfolio of campaigns"
+    ],
+    "costAndTime": {
+      "time": "4-year degree + 2–3 years of experience to reach manager",
+      "money": "$40K–$120K (degree), or $0 self-taught",
+      "hidden": "Analytics tools $100/mo, courses $500/yr"
+    },
+    "careerChangerPath": "Any background → 6-month marketing certificate + freelance projects → junior marketing role → manager in 3–4 years."
   },
   {
     "id": "hr-manager",
@@ -423,7 +497,44 @@
     "educationPath": "BS Civil Engineering + PE license for senior roles.",
     "salaryMin": 70000,
     "salaryMax": 135000,
-    "userTypes": ["student", "graduate"]
+    "userTypes": ["student", "graduate"],
+    "whatYouDo": [
+      "Design structures and infrastructure with AutoCAD",
+      "Analyze loads, stresses, and safety requirements",
+      "Coordinate with contractors and city officials",
+      "Visit sites to inspect construction progress"
+    ],
+    "roadmap": [
+      { "stage": "High School", "action": "Focus on Physics + Calculus", "resource": "Khan Academy, AP Physics" },
+      { "stage": "College", "action": "BS Civil Engineering + internships", "resource": "ABET-accredited program" },
+      { "stage": "FE Exam", "action": "Pass Fundamentals of Engineering exam", "resource": "NCEES study materials" },
+      { "stage": "Early career", "action": "Work 4 years under a PE (Professional Engineer)", "resource": "Design firms, government agencies" },
+      { "stage": "PE License", "action": "Pass PE exam → become licensed", "resource": "NCEES PE prep" }
+    ],
+    "freeResources": [
+      { "name": "MIT OpenCourseWare — Civil", "type": "University lectures" },
+      { "name": "Learn Civil Engineering (YouTube)", "type": "Explainer videos" },
+      { "name": "NCEES Free Resources", "type": "Exam prep" },
+      { "name": "Engineering Feed", "type": "Blog" }
+    ],
+    "reality": {
+      "workLife": "Moderate — some travel to sites, otherwise office",
+      "stress": "Medium — deadlines + safety responsibility",
+      "remote": "Partial — site visits need in-person, design is remote",
+      "future": "Strong — infrastructure investment keeps growing globally"
+    },
+    "commonMistakes": [
+      "Skipping internships — practical experience is essential",
+      "Not pursuing PE license — costs you 30% higher salary ceiling",
+      "Ignoring software skills (AutoCAD, Revit, Civil 3D)",
+      "Choosing a specialty too early (explore structural, transportation, environmental)"
+    ],
+    "costAndTime": {
+      "time": "4 years (BS) + 4 years experience → PE license",
+      "money": "$40K–$120K (in-state public) / $150K+ (private)",
+      "hidden": "FE + PE exam fees $700 total, software $200/yr"
+    },
+    "careerChangerPath": "Engineering technician → BS Civil Engineering (part-time possible) → FE exam → junior engineer → PE license in 8 years total."
   },
   {
     "id": "mechanical-engineer",
@@ -459,7 +570,44 @@
     "educationPath": "Bachelor's in subject + teaching certification (state-specific).",
     "salaryMin": 45000,
     "salaryMax": 85000,
-    "userTypes": ["student", "graduate"]
+    "userTypes": ["student", "graduate"],
+    "whatYouDo": [
+      "Plan lessons and teach 5–6 classes daily",
+      "Grade assignments, exams, and give feedback",
+      "Mentor students and communicate with parents",
+      "Attend staff meetings and professional development"
+    ],
+    "roadmap": [
+      { "stage": "High School", "action": "Master your subject + enjoy learning", "resource": "AP courses, Khan Academy" },
+      { "stage": "College", "action": "Bachelor's in your subject + teacher prep program", "resource": "University education program" },
+      { "stage": "Student Teaching", "action": "12-week supervised classroom experience", "resource": "Local school placement" },
+      { "stage": "Certification", "action": "Pass state teacher certification exams", "resource": "Praxis, state-specific tests" },
+      { "stage": "First years", "action": "Get classroom experience + pursue master's for higher pay", "resource": "District professional development" }
+    ],
+    "freeResources": [
+      { "name": "Khan Academy Teacher Tools", "type": "Curriculum" },
+      { "name": "Edutopia (YouTube)", "type": "Teaching strategies" },
+      { "name": "CommonLit", "type": "Free reading content" },
+      { "name": "PBS Learning Media", "type": "Videos + lessons" }
+    ],
+    "reality": {
+      "workLife": "Moderate — 40-hour weeks + grading at home",
+      "stress": "Medium-High — classroom management is tough",
+      "remote": "Limited — teaching is in-person",
+      "future": "Stable demand — always need teachers, though pay varies wildly by state"
+    },
+    "commonMistakes": [
+      "Choosing teaching for summers off — the job is harder than it looks",
+      "Not researching salary by state — varies from $40K to $90K+",
+      "Skipping classroom management training",
+      "Ignoring mental health — teacher burnout is real"
+    ],
+    "costAndTime": {
+      "time": "4 years (bachelor's + certification)",
+      "money": "$40K–$100K (varies by in-state vs. private)",
+      "hidden": "Certification exams $300, student teaching is unpaid"
+    },
+    "careerChangerPath": "Any bachelor's degree → alternative certification program (1 year) → classroom teaching. Common for career-changers in STEM fields."
   },
   {
     "id": "professor",
